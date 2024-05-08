@@ -32,7 +32,7 @@ public class MenuController : MonoBehaviour {
 
 		//Updates 3d text with saved values fetched from playerprefs
 		availableMoney = PlayerPrefs.GetInt("PlayerMoney");
-		playerMoney.GetComponent<TextMesh>().text = "Coins: " + availableMoney;
+		playerMoney.GetComponent<TextMesh>().text = "Δενόγθ: " + availableMoney;
 	}
 
 
