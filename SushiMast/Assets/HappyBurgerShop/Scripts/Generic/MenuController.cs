@@ -21,6 +21,10 @@ public class MenuController : MonoBehaviour {
 
 	public AudioClip tapSfx;					//tap sound for buttons click
 
+	private bool isMuted = false;
+
+	private GameObject _muteButton;
+	private GameObject _unMuteButton;
 
 	/// <summary>
 	/// Init. Updates the 3d texts with saved values fetched from playerprefs.
@@ -35,11 +39,33 @@ public class MenuController : MonoBehaviour {
 		playerMoney.GetComponent<TextMesh>().text = "Деньги: " + availableMoney;
 	}
 
+    void Start()
+    {
+        _muteButton = GameObject.Find("Button-Mute");
+        _unMuteButton = GameObject.Find("Button-UnMute");
 
-	/// <summary>
-	/// FSM
-	/// </summary>
-	void Update (){	
+        // Загрузка состояния кнопки из PlayerPrefs
+        isMuted = PlayerPrefs.GetInt("IsMuted", 0) == 1;
+
+        // Установка состояния кнопок в соответствии с загруженным значением
+        if (isMuted)
+        {
+            _muteButton.SetActive(false);
+            _unMuteButton.SetActive(true);
+            AudioListener.pause = true;
+        }
+        else
+        {
+            _muteButton.SetActive(true);
+            _unMuteButton.SetActive(false);
+            AudioListener.pause = false;
+        }
+    }
+
+    /// <summary>
+    /// FSM
+    /// </summary>
+    void Update (){	
 		if(canTap) {
 			StartCoroutine(tapManager());
 		}
@@ -94,22 +120,38 @@ public class MenuController : MonoBehaviour {
 					yield return new WaitForSeconds(1.0f);
 					break;
 
-				//This button has its own controller
-				case "Button-Share":
-					StartCoroutine(animateButton(objectHit));
-					yield return new WaitForSeconds(1.0f);
-					break;
+                //This button has its own controller
+                case "Button-Mute":
+                    playSfx(tapSfx);
+                    StartCoroutine(animateButton(objectHit));
+                    isMuted = true;
+                    AudioListener.pause = true;
+                    objectHit.gameObject.SetActive(false);
+                    _unMuteButton.SetActive(true);
+                    PlayerPrefs.SetInt("IsMuted", isMuted ? 1 : 0);
+                    yield return new WaitForSeconds(1.0f);
+                    break;
 
-			}	
+                case "Button-UnMute":
+                    playSfx(tapSfx);
+                    StartCoroutine(animateButton(objectHit));
+                    isMuted = false;
+                    AudioListener.pause = false;
+                    objectHit.gameObject.SetActive(false);
+                    _muteButton.SetActive(true);
+                    _unMuteButton.SetActive(false);
+                    PlayerPrefs.SetInt("IsMuted", isMuted ? 1 : 0);
+                    yield return new WaitForSeconds(1.0f);
+                    break;
+            }	
 		}
 	}
 
-
-	/// <summary>
-	/// This function animates a button by modifying it's scales on x-y plane.
-	// can be used on any element to simulate the tap effect.
-	/// </summary>
-	IEnumerator animateButton ( GameObject _btn  ){
+    /// <summary>
+    /// This function animates a button by modifying it's scales on x-y plane.
+    // can be used on any element to simulate the tap effect.
+    /// </summary>
+    IEnumerator animateButton ( GameObject _btn  ){
 		
 		canTap = false;
 		Vector3 startingScale = _btn.transform.localScale;		//initial scale	
@@ -140,6 +182,7 @@ public class MenuController : MonoBehaviour {
 		if(r >= 1)
 			canTap = true;
 	}
+
 
 
 	/// <summary>

@@ -37,7 +37,7 @@ public class ShopController : MonoBehaviour {
 		//availableMoney = 1000;
 		//PlayerPrefs.DeleteAll();
 		
-		playerMoney.GetComponent<TextMesh>().text = "Coins: " + availableMoney;
+		playerMoney.GetComponent<TextMesh>().text = "Δενόγθ: " + availableMoney;
 		
 		//check if we have purchased something before.
 		for(int i = 0; i < totalItemsForSale.Length; i++) {
