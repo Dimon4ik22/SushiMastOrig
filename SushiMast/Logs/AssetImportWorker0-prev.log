@@ -1,23 +1,23 @@
 Using pre-set license
 Built from '2022.3/staging' branch; Version is '2022.3.1f1 (f18e0c1b5784) revision 15830540'; Using compiler version '192829333'; Build Type 'Release'
-OS: 'Windows 11  (10.0.22631) 64bit Professional' Language: 'ru' Physical Memory: 15715 MB
+OS: 'Windows 11  (10.0.22621) 64bit Professional' Language: 'ru' Physical Memory: 32619 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
 
 COMMAND LINE ARGUMENTS:
-C:\Program Files\Unity\Hub\Editor\2022.3.1f1\Editor\Unity.exe
+C:\New Programs\Unity Engine\2022.3.1f1\Editor\Unity.exe
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker0
 -projectPath
-C:/New Programs/Unity Git Projects/SushiMastOrig/SushiMast
+C:/New Programs/Unity Projects (Git)/SushiMastOrig/SushiMast
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-54140
-Successfully changed project path to: C:/New Programs/Unity Git Projects/SushiMastOrig/SushiMast
-C:/New Programs/Unity Git Projects/SushiMastOrig/SushiMast
+52249
+Successfully changed project path to: C:/New Programs/Unity Projects (Git)/SushiMastOrig/SushiMast
+C:/New Programs/Unity Projects (Git)/SushiMastOrig/SushiMast
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-bucket-allocator-granularity=16"
     "memorysetup-bucket-allocator-bucket-count=8"
@@ -49,71 +49,73 @@ C:/New Programs/Unity Git Projects/SushiMastOrig/SushiMast
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [4580] Host "[IP] 192.168.1.70 [Port] 0 [Flags] 2 [Guid] 3155531371 [EditorId] 3155531371 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-3KK9C0J) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [7300] Host "[IP] 192.168.31.100 [Port] 0 [Flags] 2 [Guid] 4050977022 [EditorId] 4050977022 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-MPH1GL2) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [4580] Host "[IP] 192.168.1.70 [Port] 0 [Flags] 2 [Guid] 3155531371 [EditorId] 3155531371 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-3KK9C0J) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [7300] Host "[IP] 192.168.31.100 [Port] 0 [Flags] 2 [Guid] 4050977022 [EditorId] 4050977022 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-MPH1GL2) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-Refreshing native plugins compatible for Editor in 6.54 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 8.05 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.1f1 (f18e0c1b5784)
-[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.1f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path C:/New Programs/Unity Git Projects/SushiMastOrig/SushiMast/Assets
+[Subsystems] Discovering subsystems at path C:/New Programs/Unity Engine/2022.3.1f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/New Programs/Unity Projects (Git)/SushiMastOrig/SushiMast/Assets
 GfxDevice: creating device client; threaded=0; jobified=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce RTX 3060 Laptop GPU (ID=0x2520)
-    Vendor:   NVIDIA
-    VRAM:     6010 MB
-    Driver:   31.0.15.4680
+    Renderer: AMD Radeon RX 7600 (ID=0x7480)
+    Vendor:   ATI
+    VRAM:     8130 MB
+    Driver:   31.0.24027.1012
 Initialize mono
-Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.1f1/Editor/Data/Managed'
-Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.1f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
-Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.1f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56784
+Mono path[0] = 'C:/New Programs/Unity Engine/2022.3.1f1/Editor/Data/Managed'
+Mono path[1] = 'C:/New Programs/Unity Engine/2022.3.1f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/New Programs/Unity Engine/2022.3.1f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56664
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.1f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
-Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.1f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll
-Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.1f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.005739 seconds.
-- Loaded All Assemblies, in  0.270 seconds
+Register platform support module: C:/New Programs/Unity Engine/2022.3.1f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/New Programs/Unity Engine/2022.3.1f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: C:/New Programs/Unity Engine/2022.3.1f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll
+Register platform support module: C:/New Programs/Unity Engine/2022.3.1f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.010244 seconds.
+- Loaded All Assemblies, in  0.444 seconds
 Native extension for WindowsStandalone target not found
 [usbmuxd] Start listen thread
 [usbmuxd] Listen thread started
 Native extension for iOS target not found
 Native extension for Android target not found
-Android Extension - Scanning For ADB Devices 181 ms
+Android Extension - Scanning For ADB Devices 316 ms
+Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.482 seconds
-Domain Reload Profiling: 751ms
-	BeginReloadAssembly (65ms)
+- Finished resetting the current domain, in  0.755 seconds
+Domain Reload Profiling: 1198ms
+	BeginReloadAssembly (106ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (27ms)
-	RebuildNativeTypeToScriptingClass (8ms)
-	initialDomainReloadingComplete (49ms)
-	LoadAllAssembliesAndSetupDomain (120ms)
-		LoadAssemblies (64ms)
+	RebuildCommonClasses (46ms)
+	RebuildNativeTypeToScriptingClass (15ms)
+	initialDomainReloadingComplete (77ms)
+	LoadAllAssembliesAndSetupDomain (198ms)
+		LoadAssemblies (105ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (116ms)
-			TypeCache.Refresh (115ms)
-				TypeCache.ScanAssembly (105ms)
+		AnalyzeDomain (191ms)
+			TypeCache.Refresh (190ms)
+				TypeCache.ScanAssembly (174ms)
 			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (0ms)
-	FinalizeReload (482ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (756ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (429ms)
+		SetupLoadedEditorAssemblies (675ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (284ms)
-			SetLoadedEditorAssemblies (3ms)
+			InitializePlatformSupportModulesInManaged (473ms)
+			SetLoadedEditorAssemblies (5ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (2ms)
-			ProcessInitializeOnLoadAttributes (96ms)
-			ProcessInitializeOnLoadMethodAttributes (43ms)
+			BeforeProcessingInitializeOnLoad (3ms)
+			ProcessInitializeOnLoadAttributes (133ms)
+			ProcessInitializeOnLoadMethodAttributes (61ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -121,544 +123,61 @@ Domain Reload Profiling: 751ms
 ========================================================================
 Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\New Programs\Unity Git Projects\SushiMastOrig\SushiMast\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\New Programs\Unity Git Projects\SushiMastOrig\SushiMast\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  0.566 seconds
-Refreshing native plugins compatible for Editor in 2.02 ms, found 3 plugins.
+Symbol file LoadedFromMemory doesn't match image C:\New Programs\Unity Projects (Git)\SushiMastOrig\SushiMast\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\New Programs\Unity Projects (Git)\SushiMastOrig\SushiMast\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  0.918 seconds
+Refreshing native plugins compatible for Editor in 3.10 ms, found 3 plugins.
 Native extension for WindowsStandalone target not found
 Native extension for iOS target not found
 Native extension for Android target not found
+Native extension for WebGL target not found
 Package Manager log level set to [2]
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.484 seconds
-Domain Reload Profiling: 1049ms
-	BeginReloadAssembly (104ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (5ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (22ms)
-	RebuildCommonClasses (27ms)
-	RebuildNativeTypeToScriptingClass (8ms)
-	initialDomainReloadingComplete (35ms)
-	LoadAllAssembliesAndSetupDomain (390ms)
-		LoadAssemblies (197ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (239ms)
-			TypeCache.Refresh (224ms)
-				TypeCache.ScanAssembly (212ms)
-			ScanForSourceGeneratedMonoScriptInfo (11ms)
-			ResolveRequiredComponents (3ms)
-	FinalizeReload (485ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (354ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (28ms)
-			SetLoadedEditorAssemblies (3ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (51ms)
-			ProcessInitializeOnLoadAttributes (251ms)
-			ProcessInitializeOnLoadMethodAttributes (17ms)
-			AfterProcessingInitializeOnLoad (5ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (6ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
-Refreshing native plugins compatible for Editor in 2.12 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3120 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 33 unused Assets / (57.7 KB). Loaded Objects now: 3588.
-Memory consumption went from 126.2 MB to 126.1 MB.
-Total: 4.230200 ms (FindLiveObjects: 0.305000 ms CreateObjectMapping: 0.100100 ms MarkObjects: 3.705500 ms  DeleteObjects: 0.118100 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 254062.031855 seconds.
-  path: Assets/HappyBurgerShop/Scenes/Menu.unity
-  artifactKey: Guid(99290501aac26e144815ac48f3abeec9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HappyBurgerShop/Scenes/Menu.unity using Guid(99290501aac26e144815ac48f3abeec9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df8bcc0a462994091a265675b4dbaa80') in 0.002560 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 4381.085608 seconds.
-  path: Assets/HappyBurgerShop/Textures/GUI/Play.png
-  artifactKey: Guid(8d9ad22d6660c344680bce16e63ca2f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HappyBurgerShop/Textures/GUI/Play.png using Guid(8d9ad22d6660c344680bce16e63ca2f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47e3c5dc9f9e076c0930d6020bd5e2fd') in 0.192883 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 7.642741 seconds.
-  path: Assets/HappyBurgerShop/Textures/Map/Map.png
-  artifactKey: Guid(70d0a9a230fe36142b6dc611d711359b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HappyBurgerShop/Textures/Map/Map.png using Guid(70d0a9a230fe36142b6dc611d711359b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '432c46066dd3dc4d174db12b4744763e') in 0.010692 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000014 seconds.
-  path: Assets/HappyBurgerShop/Textures/Map/Map3 (1).jpg
-  artifactKey: Guid(002e0189d86ea434889b3953e9e43aac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HappyBurgerShop/Textures/Map/Map3 (1).jpg using Guid(002e0189d86ea434889b3953e9e43aac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ca03fe9b98180b445d8f89238afb8b8') in 0.010386 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000014 seconds.
-  path: Assets/HappyBurgerShop/Textures/Map/mapLevelIndOff.png
-  artifactKey: Guid(5c1824055d8423b40899889294aeee52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HappyBurgerShop/Textures/Map/mapLevelIndOff.png using Guid(5c1824055d8423b40899889294aeee52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2fc81aa38182945a06bfa11cb7f8d240') in 0.008444 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000013 seconds.
-  path: Assets/HappyBurgerShop/Textures/Map/mapLevelInd.png
-  artifactKey: Guid(0c1bdeb82f11d184cb12a8e83ef0fa48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HappyBurgerShop/Textures/Map/mapLevelInd.png using Guid(0c1bdeb82f11d184cb12a8e83ef0fa48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e87ef5f47622d991bb338dab8751b0a3') in 0.005999 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/HappyBurgerShop/Textures/Map/Map3.jpg
-  artifactKey: Guid(f431a5891ca64654b8c3e5606f9f69fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HappyBurgerShop/Textures/Map/Map3.jpg using Guid(f431a5891ca64654b8c3e5606f9f69fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '421d676b2ba9692d5310953f3afc8a84') in 0.010040 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.297943 seconds.
-  path: Assets/HappyBurgerShop/Textures/Menu/icon.png
-  artifactKey: Guid(c5781915fe1bc404e88f15bc5a1efa3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HappyBurgerShop/Textures/Menu/icon.png using Guid(c5781915fe1bc404e88f15bc5a1efa3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f5414edb5639f384e75de3b838042aba') in 0.006650 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/HappyBurgerShop/Textures/Menu/menuOptions.png
-  artifactKey: Guid(e9fe58839dd568b4eb0ec7e35ce03c33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HappyBurgerShop/Textures/Menu/menuOptions.png using Guid(e9fe58839dd568b4eb0ec7e35ce03c33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0fbc4e44268d3927111c8dabd037ac57') in 0.006917 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/HappyBurgerShop/Textures/Menu/logoGame.psd
-  artifactKey: Guid(4ba4fb06081a1df42a6c355b376e3f13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HappyBurgerShop/Textures/Menu/logoGame.psd using Guid(4ba4fb06081a1df42a6c355b376e3f13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1119e27b75af1ea5bd079b152a4c96b8') in 0.005692 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.975123 seconds.
-  path: Assets/HappyBurgerShop/Textures/Misc/chair.png
-  artifactKey: Guid(240185557f0a3d342822020cb0054e29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HappyBurgerShop/Textures/Misc/chair.png using Guid(240185557f0a3d342822020cb0054e29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5549129c6d79165f5cc2ca6800c3e2a5') in 0.006092 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000013 seconds.
-  path: Assets/HappyBurgerShop/Textures/Misc/jukebox.png
-  artifactKey: Guid(e4989bf7109e8384c93b873468183e97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HappyBurgerShop/Textures/Misc/jukebox.png using Guid(e4989bf7109e8384c93b873468183e97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4bfae36446ccd316947241f02b2bbad5') in 0.005124 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000014 seconds.
-  path: Assets/HappyBurgerShop/Textures/Misc/RollMaker.png
-  artifactKey: Guid(40a060f473bd95c4194569f0fb9659af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HappyBurgerShop/Textures/Misc/RollMaker.png using Guid(40a060f473bd95c4194569f0fb9659af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c55e0446b4b44e9222bfabdb51e914f') in 0.006285 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000014 seconds.
-  path: Assets/HappyBurgerShop/Textures/Misc/flower.png
-  artifactKey: Guid(adabd75c30f494b42a303e976b3e702b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HappyBurgerShop/Textures/Misc/flower.png using Guid(adabd75c30f494b42a303e976b3e702b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b594589dbad0e74353be85b10353500e') in 0.005340 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000013 seconds.
-  path: Assets/HappyBurgerShop/Textures/Misc/Roll.png
-  artifactKey: Guid(e2d8362b39ecb3a479182d8a44f5b3c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HappyBurgerShop/Textures/Misc/Roll.png using Guid(e2d8362b39ecb3a479182d8a44f5b3c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c817ca93f47e7cea675e972899a1fdd3') in 0.033101 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 1.215529 seconds.
-  path: Assets/HappyBurgerShop/Textures/GUI/0-star.png
-  artifactKey: Guid(921c3e7a5107c0545a697f34470edd14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HappyBurgerShop/Textures/GUI/0-star.png using Guid(921c3e7a5107c0545a697f34470edd14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a45662ee373cf318773b77887baecf96') in 0.005366 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000013 seconds.
-  path: Assets/HappyBurgerShop/Textures/GUI/btnPlay.png
-  artifactKey: Guid(579b288a93ef1574988791cd2069224e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HappyBurgerShop/Textures/GUI/btnPlay.png using Guid(579b288a93ef1574988791cd2069224e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69ef200621b739513fdae19556e09b6a') in 0.005355 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000013 seconds.
-  path: Assets/HappyBurgerShop/Textures/GUI/cell-3.png
-  artifactKey: Guid(7c348d18d723c354fb03bfcde331cf48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HappyBurgerShop/Textures/GUI/cell-3.png using Guid(7c348d18d723c354fb03bfcde331cf48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e94b9d729b65f3bc786d33834826ff43') in 0.004573 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000012 seconds.
-  path: Assets/HappyBurgerShop/Textures/GUI/ClockIcon.png
-  artifactKey: Guid(9ff29c3abb6d0de46a50ad674ddc06ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HappyBurgerShop/Textures/GUI/ClockIcon.png using Guid(9ff29c3abb6d0de46a50ad674ddc06ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b6380c6fff07dab72ba2782b3fbc8bb') in 0.005315 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000087 seconds.
-  path: Assets/HappyBurgerShop/Textures/GUI/mission-1star.png
-  artifactKey: Guid(97e5293af6937644fa24802ffaf85a2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HappyBurgerShop/Textures/GUI/mission-1star.png using Guid(97e5293af6937644fa24802ffaf85a2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2575ed8d5471d4a6136682c759e024e') in 0.005678 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000014 seconds.
-  path: Assets/HappyBurgerShop/Textures/GUI/endgame-1star 1.png
-  artifactKey: Guid(ccb58dd9106691342819a51e1caefe88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HappyBurgerShop/Textures/GUI/endgame-1star 1.png using Guid(ccb58dd9106691342819a51e1caefe88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af1f276b941d2d66da0580d30ac0ba33') in 0.004365 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000012 seconds.
-  path: Assets/HappyBurgerShop/Textures/GUI/cell.png
-  artifactKey: Guid(4b15c006d4e9a2d42b6ef91b03f43265) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HappyBurgerShop/Textures/GUI/cell.png using Guid(4b15c006d4e9a2d42b6ef91b03f43265) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66352beb774ef41956dc5437ac4a5fb9') in 0.004494 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000012 seconds.
-  path: Assets/HappyBurgerShop/Textures/GUI/btnSoundOff-2.png
-  artifactKey: Guid(d8cb0349055233541a4e29970dd394cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HappyBurgerShop/Textures/GUI/btnSoundOff-2.png using Guid(d8cb0349055233541a4e29970dd394cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de91e7fcfc79a6881be85578b587768e') in 0.004145 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/HappyBurgerShop/Textures/GUI/btnMenu.png
-  artifactKey: Guid(783ff51ce5d48d745ae3254ee2acf212) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HappyBurgerShop/Textures/GUI/btnMenu.png using Guid(783ff51ce5d48d745ae3254ee2acf212) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5827427c6f8f5458d668d35c0421cb50') in 0.005320 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000013 seconds.
-  path: Assets/HappyBurgerShop/Textures/GUI/endgame-0star.png
-  artifactKey: Guid(62db733b07391504fb78c72100c59356) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HappyBurgerShop/Textures/GUI/endgame-0star.png using Guid(62db733b07391504fb78c72100c59356) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef6522c2634e4833490835a1d7d09aa5') in 0.004716 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000012 seconds.
-  path: Assets/HappyBurgerShop/Textures/GUI/endgame-2star 1.png
-  artifactKey: Guid(eba2798c459725547b540723715e41ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HappyBurgerShop/Textures/GUI/endgame-2star 1.png using Guid(eba2798c459725547b540723715e41ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d00bcc62f19237ab16efb57cda9ba8e') in 0.005162 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/HappyBurgerShop/Textures/GUI/endgame-3star 1.png
-  artifactKey: Guid(6c1fd106ae13e924fbde238aa6cc896b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HappyBurgerShop/Textures/GUI/endgame-3star 1.png using Guid(6c1fd106ae13e924fbde238aa6cc896b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '03236e24fdb1b8db77c1df8615b4251c') in 0.005003 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000014 seconds.
-  path: Assets/HappyBurgerShop/Textures/GUI/ADButton.png
-  artifactKey: Guid(446cac98f527f6745929f3dbf8cd077e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HappyBurgerShop/Textures/GUI/ADButton.png using Guid(446cac98f527f6745929f3dbf8cd077e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4bb4f58923bc008add6c40670605a2c0') in 0.004944 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/HappyBurgerShop/Textures/GUI/icon.png
-  artifactKey: Guid(9f42311220114b14c8b849bb712afa10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HappyBurgerShop/Textures/GUI/icon.png using Guid(9f42311220114b14c8b849bb712afa10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e3b9f25baa6f71464bd5aa9e77c0907') in 0.005208 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000013 seconds.
-  path: Assets/HappyBurgerShop/Textures/GUI/endgame-0star 1.png
-  artifactKey: Guid(ef5bd05a2a012714f866b082585c4d9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HappyBurgerShop/Textures/GUI/endgame-0star 1.png using Guid(ef5bd05a2a012714f866b082585c4d9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd53246ce670d1c97fce222c7bda85167') in 0.004589 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000013 seconds.
-  path: Assets/HappyBurgerShop/Textures/GUI/Clock.png
-  artifactKey: Guid(e5fa397708358be498de034405e2fcf7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HappyBurgerShop/Textures/GUI/Clock.png using Guid(e5fa397708358be498de034405e2fcf7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '150b563aeb9f321b350576f271c5881e') in 0.005789 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/HappyBurgerShop/Textures/GUI/btnShop.png
-  artifactKey: Guid(8a11277eca4682b41aedd4d8bfea03c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HappyBurgerShop/Textures/GUI/btnShop.png using Guid(8a11277eca4682b41aedd4d8bfea03c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6be26b3b72401869864d2f20d9cb61cf') in 0.005715 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/HappyBurgerShop/Textures/GUI/btnVideo.png
-  artifactKey: Guid(c189934e199bb294ea3e9d9840a6681e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HappyBurgerShop/Textures/GUI/btnVideo.png using Guid(c189934e199bb294ea3e9d9840a6681e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c0a7a71429b3d3d25444919dda2b4e6') in 0.005350 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000013 seconds.
-  path: Assets/HappyBurgerShop/Textures/GUI/btnBack.png
-  artifactKey: Guid(404fde423946d9548a85281d80cfaa78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HappyBurgerShop/Textures/GUI/btnBack.png using Guid(404fde423946d9548a85281d80cfaa78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1798d2b9cc075f6788649baa575c3356') in 0.004614 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/HappyBurgerShop/Textures/GUI/btnNext.png
-  artifactKey: Guid(6386bd0d1ce49664fb64a4b91b5a5724) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HappyBurgerShop/Textures/GUI/btnNext.png using Guid(6386bd0d1ce49664fb64a4b91b5a5724) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9427a86f01bad38a8e4b6d67e45779f9') in 0.004402 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/HappyBurgerShop/Textures/GUI/endgame-3star.png
-  artifactKey: Guid(7653662cba444824581a3faa6c5b3921) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HappyBurgerShop/Textures/GUI/endgame-3star.png using Guid(7653662cba444824581a3faa6c5b3921) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '80854423fad92d4943c0678ba148656b') in 0.004493 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000014 seconds.
-  path: Assets/HappyBurgerShop/Textures/GUI/2-star.png
-  artifactKey: Guid(3430896d2a5ee80468b826f7e4fafaca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HappyBurgerShop/Textures/GUI/2-star.png using Guid(3430896d2a5ee80468b826f7e4fafaca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5358f79571d4aeb6ba6dea68061b365d') in 0.004656 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000013 seconds.
-  path: Assets/HappyBurgerShop/Textures/GUI/btnSettings.png
-  artifactKey: Guid(35b0a37b614780840972e19e5eb840ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HappyBurgerShop/Textures/GUI/btnSettings.png using Guid(35b0a37b614780840972e19e5eb840ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd4b2836632a43763da89d23f78c0057') in 0.004484 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/HappyBurgerShop/Textures/GUI/long.png
-  artifactKey: Guid(2795245aef57a79428c4e7f825febee8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HappyBurgerShop/Textures/GUI/long.png using Guid(2795245aef57a79428c4e7f825febee8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '012babf4594edc630bfd0b92cff6ae31') in 0.004166 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000013 seconds.
-  path: Assets/HappyBurgerShop/Textures/GUI/btnRestart.png
-  artifactKey: Guid(4a53178bd84c8924aa54794ff05d4d77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HappyBurgerShop/Textures/GUI/btnRestart.png using Guid(4a53178bd84c8924aa54794ff05d4d77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd7513108c1b302b9f525749eeb263fff') in 0.004141 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000012 seconds.
-  path: Assets/HappyBurgerShop/Textures/GUI/endgame-1star.png
-  artifactKey: Guid(18ca9dd6883660c4c81dea70e7312ee1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HappyBurgerShop/Textures/GUI/endgame-1star.png using Guid(18ca9dd6883660c4c81dea70e7312ee1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '052b3d9ea388f23d619d31fca12e4a32') in 0.004793 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/HappyBurgerShop/Textures/GUI/cell-2.png
-  artifactKey: Guid(47959b0ac6a22f24a9dc3217b25994de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HappyBurgerShop/Textures/GUI/cell-2.png using Guid(47959b0ac6a22f24a9dc3217b25994de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '48c54a2f977430f931db05d4cc83c6c9') in 0.005986 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.678663 seconds.
-  path: Assets/HappyBurgerShop/Textures/GUI/MissionBack.png
-  artifactKey: Guid(54da9858ec852124cbc7317fad34a0bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HappyBurgerShop/Textures/GUI/MissionBack.png using Guid(54da9858ec852124cbc7317fad34a0bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '23139cecc842145dbc6b604c7fea2a56') in 0.007948 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000014 seconds.
-  path: Assets/HappyBurgerShop/Textures/GUI/Mute.png
-  artifactKey: Guid(f93f9479eee5a684d8da0af6b3536ea9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HappyBurgerShop/Textures/GUI/Mute.png using Guid(f93f9479eee5a684d8da0af6b3536ea9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1752dfe3df66a490fc27c7dae45cc3a2') in 0.005422 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000012 seconds.
-  path: Assets/HappyBurgerShop/Textures/GUI/ShopButton.png
-  artifactKey: Guid(eac1ed22337f2e04588daaab5daabf21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HappyBurgerShop/Textures/GUI/ShopButton.png using Guid(eac1ed22337f2e04588daaab5daabf21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f2a46a52a4f6f540e77ca36d583ecea') in 0.004555 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000011 seconds.
-  path: Assets/HappyBurgerShop/Textures/GUI/Star.png
-  artifactKey: Guid(9f383351ffe185246ae6e7cb33ae84ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HappyBurgerShop/Textures/GUI/Star.png using Guid(9f383351ffe185246ae6e7cb33ae84ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '05a14b0b3095cc241e1a2e737e5d252e') in 0.009759 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/HappyBurgerShop/Textures/GUI/missionLongBackNew.png
-  artifactKey: Guid(537b8f6aad1358d4480b49919fa62c1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HappyBurgerShop/Textures/GUI/missionLongBackNew.png using Guid(537b8f6aad1358d4480b49919fa62c1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '457fbcb99057ca5ddd8fee8de3c169cd') in 0.004714 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000013 seconds.
-  path: Assets/HappyBurgerShop/Textures/GUI/missonBubble.png
-  artifactKey: Guid(26a5156835debda4ca88fb393492e15a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HappyBurgerShop/Textures/GUI/missonBubble.png using Guid(26a5156835debda4ca88fb393492e15a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '81efb1345d24bb31275c56ff0b67f316') in 0.004871 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000011 seconds.
-  path: Assets/HappyBurgerShop/Textures/GUI/ReturnButton.png
-  artifactKey: Guid(6039fff1d8b2e8143a2ae8a52cddaa5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HappyBurgerShop/Textures/GUI/ReturnButton.png using Guid(6039fff1d8b2e8143a2ae8a52cddaa5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb20a2499e5b891173442a5df78b9ebe') in 0.005022 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.207254 seconds.
-  path: Assets/HappyBurgerShop/Textures/GUI/timerBarBG.png
-  artifactKey: Guid(abda6e50981b85043929af93edd458b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HappyBurgerShop/Textures/GUI/timerBarBG.png using Guid(abda6e50981b85043929af93edd458b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13ef35a300c5916188258326d60f6b01') in 0.005227 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/HappyBurgerShop/Textures/GUI/you-have-lost.psd
-  artifactKey: Guid(b79ad234195bc1f49b11d9ee597692e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HappyBurgerShop/Textures/GUI/you-have-lost.psd using Guid(b79ad234195bc1f49b11d9ee597692e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c929881ec74b67e532c7d263bb3d32de') in 0.010951 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000072 seconds.
-  path: Assets/HappyBurgerShop/Textures/GUI/you-have-lost 1.png
-  artifactKey: Guid(9db23faa6ca99324dbc5a73aab558513) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HappyBurgerShop/Textures/GUI/you-have-lost 1.png using Guid(9db23faa6ca99324dbc5a73aab558513) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44323ba9c5c2bf151fa52c7dbdf0833b') in 0.004635 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\New Programs\Unity Git Projects\SushiMastOrig\SushiMast\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\New Programs\Unity Git Projects\SushiMastOrig\SushiMast\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  0.738 seconds
-Refreshing native plugins compatible for Editor in 2.34 ms, found 3 plugins.
-Native extension for WindowsStandalone target not found
-Native extension for iOS target not found
-Native extension for Android target not found
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.828 seconds
-Domain Reload Profiling: 1565ms
-	BeginReloadAssembly (212ms)
+- Finished resetting the current domain, in  0.725 seconds
+Domain Reload Profiling: 1642ms
+	BeginReloadAssembly (167ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (8ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (100ms)
-	RebuildCommonClasses (27ms)
-	RebuildNativeTypeToScriptingClass (8ms)
-	initialDomainReloadingComplete (27ms)
-	LoadAllAssembliesAndSetupDomain (462ms)
-		LoadAssemblies (257ms)
+		CreateAndSetChildDomain (27ms)
+	RebuildCommonClasses (45ms)
+	RebuildNativeTypeToScriptingClass (15ms)
+	initialDomainReloadingComplete (54ms)
+	LoadAllAssembliesAndSetupDomain (636ms)
+		LoadAssemblies (308ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (264ms)
-			TypeCache.Refresh (260ms)
-				TypeCache.ScanAssembly (235ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (4ms)
-	FinalizeReload (829ms)
+		AnalyzeDomain (405ms)
+			TypeCache.Refresh (380ms)
+				TypeCache.ScanAssembly (361ms)
+			ScanForSourceGeneratedMonoScriptInfo (19ms)
+			ResolveRequiredComponents (6ms)
+	FinalizeReload (726ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (402ms)
+		SetupLoadedEditorAssemblies (525ms)
 			LogAssemblyErrors (0ms)
 			InitializePlatformSupportModulesInManaged (44ms)
 			SetLoadedEditorAssemblies (5ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (67ms)
-			ProcessInitializeOnLoadAttributes (258ms)
-			ProcessInitializeOnLoadMethodAttributes (22ms)
-			AfterProcessingInitializeOnLoad (5ms)
+			BeforeProcessingInitializeOnLoad (73ms)
+			ProcessInitializeOnLoadAttributes (373ms)
+			ProcessInitializeOnLoadMethodAttributes (24ms)
+			AfterProcessingInitializeOnLoad (6ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (7ms)
-Refreshing native plugins compatible for Editor in 2.14 ms, found 3 plugins.
+		AwakeInstancesAfterBackupRestoration (9ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 3.14 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3098 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 24 unused Assets / (31.7 KB). Loaded Objects now: 3616.
-Memory consumption went from 121.3 MB to 121.3 MB.
-Total: 3.785700 ms (FindLiveObjects: 0.404700 ms CreateObjectMapping: 0.107600 ms MarkObjects: 3.128800 ms  DeleteObjects: 0.143400 ms)
+Unloading 3120 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 33 unused Assets / (57.5 KB). Loaded Objects now: 3589.
+Memory consumption went from 127.0 MB to 126.9 MB.
+Total: 4.098600 ms (FindLiveObjects: 0.316600 ms CreateObjectMapping: 0.189500 ms MarkObjects: 3.486400 ms  DeleteObjects: 0.105200 ms)
 
-Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
@@ -671,248 +190,3 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 5977.348733 seconds.
-  path: Assets/HappyBurgerShop/Textures/Customers/customer-01-s2.png
-  artifactKey: Guid(a46b291798afd2342ada7bc4871a42a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HappyBurgerShop/Textures/Customers/customer-01-s2.png using Guid(a46b291798afd2342ada7bc4871a42a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e74e21a68ef14a67523b74005cd266b') in 0.079451 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/HappyBurgerShop/Textures/Customers/customer-08-s4.png
-  artifactKey: Guid(28e224de9db8e82468dedbf932d7e4b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HappyBurgerShop/Textures/Customers/customer-08-s4.png using Guid(28e224de9db8e82468dedbf932d7e4b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71fb901169a8edbd88cfc79c79fb3e3e') in 0.013846 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/HappyBurgerShop/Textures/Customers/customer-07-s3.png
-  artifactKey: Guid(238cd90bcd47e054a9f549e1a1c89152) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HappyBurgerShop/Textures/Customers/customer-07-s3.png using Guid(238cd90bcd47e054a9f549e1a1c89152) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '35af35f90bb95f305dc0c861bb6cf4a4') in 0.014306 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/HappyBurgerShop/Textures/Customers/customer-05-s1.png
-  artifactKey: Guid(e6f896deae2a4ef43aad7465c0936070) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HappyBurgerShop/Textures/Customers/customer-05-s1.png using Guid(e6f896deae2a4ef43aad7465c0936070) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8f48075204c09a3e483051819d8bb982') in 0.010745 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/HappyBurgerShop/Textures/Customers/customer-02-s3.png
-  artifactKey: Guid(3d73366d397054447b502dc1a8c7e05b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HappyBurgerShop/Textures/Customers/customer-02-s3.png using Guid(3d73366d397054447b502dc1a8c7e05b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f1043960324f8e8525810db021ec97b7') in 0.008284 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/HappyBurgerShop/Textures/Customers/customer-01-s3.png
-  artifactKey: Guid(0018b50ef2f944d42b455bf71ecffa1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HappyBurgerShop/Textures/Customers/customer-01-s3.png using Guid(0018b50ef2f944d42b455bf71ecffa1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec7ae68326054b5cfa9cddbab7bc4181') in 0.013354 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000013 seconds.
-  path: Assets/HappyBurgerShop/Textures/Customers/customer-06-s2.png
-  artifactKey: Guid(a3de96ac28a1c46469f26169ac61e024) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HappyBurgerShop/Textures/Customers/customer-06-s2.png using Guid(a3de96ac28a1c46469f26169ac61e024) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c6caf0b6ac05234eb285a522bebf2ad') in 0.008916 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/HappyBurgerShop/Textures/Customers/customer-05-s3.png
-  artifactKey: Guid(79b04382a960a1d45bd352327fc42be2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HappyBurgerShop/Textures/Customers/customer-05-s3.png using Guid(79b04382a960a1d45bd352327fc42be2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ceda9dcc17ce52d43e0f44828dc6339') in 0.011007 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/HappyBurgerShop/Textures/Customers/customer-04-s1.png
-  artifactKey: Guid(30cf1b3519c072c4ea480b1ecc570eee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HappyBurgerShop/Textures/Customers/customer-04-s1.png using Guid(30cf1b3519c072c4ea480b1ecc570eee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '699f6634a183392f863887a4d7859ce9') in 0.009173 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000014 seconds.
-  path: Assets/HappyBurgerShop/Textures/Customers/customer-04-s3.png
-  artifactKey: Guid(3a980fa42d4c9904b85610cde02d6fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HappyBurgerShop/Textures/Customers/customer-04-s3.png using Guid(3a980fa42d4c9904b85610cde02d6fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '21e124a8b8219eff7cd50074190eceab') in 0.010184 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000013 seconds.
-  path: Assets/HappyBurgerShop/Textures/Customers/Of1.png
-  artifactKey: Guid(6f2c75cb6f3f0e54781248a849197572) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HappyBurgerShop/Textures/Customers/Of1.png using Guid(6f2c75cb6f3f0e54781248a849197572) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '21b1ccd55fe763466ba028e5fb4593c0') in 0.036460 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000013 seconds.
-  path: Assets/HappyBurgerShop/Textures/Customers/customer-01-s4.png
-  artifactKey: Guid(5ecb7b8efd08972419ca8e678f1a5b2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HappyBurgerShop/Textures/Customers/customer-01-s4.png using Guid(5ecb7b8efd08972419ca8e678f1a5b2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '73844120f6842a6aa81b462626729e2c') in 0.007928 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/HappyBurgerShop/Textures/Customers/customer-07-s4.png
-  artifactKey: Guid(829dc0ebe05d4fd4789a0805b24491a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HappyBurgerShop/Textures/Customers/customer-07-s4.png using Guid(829dc0ebe05d4fd4789a0805b24491a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd7adac647285b9615ab3674043ba2c25') in 0.008248 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/HappyBurgerShop/Textures/Customers/customer-05-s4.png
-  artifactKey: Guid(1b1a1da52bea7894882f2f171be9b7d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HappyBurgerShop/Textures/Customers/customer-05-s4.png using Guid(1b1a1da52bea7894882f2f171be9b7d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '957efab28e6d5462aab5b4fa4232bfe4') in 0.008426 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000014 seconds.
-  path: Assets/HappyBurgerShop/Textures/Customers/customer-03-s4.png
-  artifactKey: Guid(3010fbb4a1044214f86bba47c7e0ce00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HappyBurgerShop/Textures/Customers/customer-03-s4.png using Guid(3010fbb4a1044214f86bba47c7e0ce00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc9dba99df380060da310a3b52c9125e') in 0.011601 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/HappyBurgerShop/Textures/Customers/customer-08-s2.png
-  artifactKey: Guid(eb1df6efb5488a941bf6eac189e2f3bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HappyBurgerShop/Textures/Customers/customer-08-s2.png using Guid(eb1df6efb5488a941bf6eac189e2f3bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dce5b321e761e43fde2136d97310ce73') in 0.011786 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000013 seconds.
-  path: Assets/HappyBurgerShop/Textures/Customers/customer-03-s3.png
-  artifactKey: Guid(f492b6291e5754c49ad3f0cc204cc4f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HappyBurgerShop/Textures/Customers/customer-03-s3.png using Guid(f492b6291e5754c49ad3f0cc204cc4f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe57660053a38b85e86978a9158527df') in 0.011879 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.027362 seconds.
-  path: Assets/HappyBurgerShop/Textures/Background/BackDesk.png
-  artifactKey: Guid(e8848de4dd228364797ce945097dff93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HappyBurgerShop/Textures/Background/BackDesk.png using Guid(e8848de4dd228364797ce945097dff93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd3aabdbed8afbfa9ae0ef8a88dcc7456') in 0.009082 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000013 seconds.
-  path: Assets/HappyBurgerShop/Textures/Background/Desk-2.png
-  artifactKey: Guid(c9424cfd87968fb4fa535166b58ad611) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HappyBurgerShop/Textures/Background/Desk-2.png using Guid(c9424cfd87968fb4fa535166b58ad611) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bccde5c78ddcc8cb8472d152fd6b43d2') in 0.019022 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/HappyBurgerShop/Textures/Background/ObjectivesPanel.png
-  artifactKey: Guid(92ce8de8127f9a643ac292b036991c61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HappyBurgerShop/Textures/Background/ObjectivesPanel.png using Guid(92ce8de8127f9a643ac292b036991c61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '59a9b68d5c80561c42c233f63178179a') in 0.012513 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/HappyBurgerShop/Textures/Background/Board.png
-  artifactKey: Guid(b5fb01765b1650447a898058d7f2d403) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HappyBurgerShop/Textures/Background/Board.png using Guid(b5fb01765b1650447a898058d7f2d403) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'debf1df9d35b69c30b7b84148590b8ab') in 0.008168 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000012 seconds.
-  path: Assets/HappyBurgerShop/Textures/Background/Desk-2 1.png
-  artifactKey: Guid(a21b1a0079a678141b20d97b88d57f8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HappyBurgerShop/Textures/Background/Desk-2 1.png using Guid(a21b1a0079a678141b20d97b88d57f8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c37afeb6c4d950344f1c5a4fbf5b0a1') in 0.005690 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000014 seconds.
-  path: Assets/HappyBurgerShop/Textures/Background/Environment-00.png
-  artifactKey: Guid(3748c281cbb80964c927b5131f36999a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HappyBurgerShop/Textures/Background/Environment-00.png using Guid(3748c281cbb80964c927b5131f36999a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '449f1870faaeefde06e5e25bc9facd31') in 0.022125 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000012 seconds.
-  path: Assets/HappyBurgerShop/Textures/Background/Note.png
-  artifactKey: Guid(d0fb2bfcd47d52f46a4ac23958dbed05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HappyBurgerShop/Textures/Background/Note.png using Guid(d0fb2bfcd47d52f46a4ac23958dbed05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c0b51ff766561040a4b836a707be4a6') in 0.019164 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/HappyBurgerShop/Textures/Background/Desk 2.png
-  artifactKey: Guid(22099f3baf783b44fb0849df51209a78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HappyBurgerShop/Textures/Background/Desk 2.png using Guid(22099f3baf783b44fb0849df51209a78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e0e5442469972c27a95ab62ed32eb2e5') in 0.003857 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/HappyBurgerShop/Textures/Background/Desk-3.png
-  artifactKey: Guid(fe0d2fb6630e69941ba8a7c81c87cace) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HappyBurgerShop/Textures/Background/Desk-3.png using Guid(fe0d2fb6630e69941ba8a7c81c87cace) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9bf39e32b808d517c3799d661f9d8930') in 0.008975 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000014 seconds.
-  path: Assets/HappyBurgerShop/Textures/Background/EndPanel.jpg
-  artifactKey: Guid(0283b13d2581f1d438e82bffbd1305c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HappyBurgerShop/Textures/Background/EndPanel.jpg using Guid(0283b13d2581f1d438e82bffbd1305c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca0960db61e98e712c70de75e6be546a') in 0.014475 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/HappyBurgerShop/Textures/Background/BackDesk 1.png
-  artifactKey: Guid(abb086faae9a2f842aa9c5d4639e1d5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HappyBurgerShop/Textures/Background/BackDesk 1.png using Guid(abb086faae9a2f842aa9c5d4639e1d5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '483f46b1cfd3701313105ce14502a812') in 0.005491 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000011 seconds.
-  path: Assets/HappyBurgerShop/Textures/Background/OrderPanel.png
-  artifactKey: Guid(89934418f1f3ef04797e11bfd0d4bafa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HappyBurgerShop/Textures/Background/OrderPanel.png using Guid(89934418f1f3ef04797e11bfd0d4bafa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c5ada29f0267d223aed864e3299994b') in 0.011348 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/HappyBurgerShop/Textures/Background/EndPanel 1.png
-  artifactKey: Guid(789d4625048fd3f43b97efc873c29bf9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HappyBurgerShop/Textures/Background/EndPanel 1.png using Guid(789d4625048fd3f43b97efc873c29bf9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a53a2fcddc9ee31365dfc6f5a853332') in 0.014879 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
-TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: ќпераци€ ввода/вывода была прервана из-за завершени€ потока команд или по запросу приложени€.
-AssetImportWorker is now disconnected from the server
-Process exiting
-Exiting without the bug reporter. Application will terminate with return code 0

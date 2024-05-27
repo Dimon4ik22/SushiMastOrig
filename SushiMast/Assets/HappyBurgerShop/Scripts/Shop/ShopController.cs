@@ -2,17 +2,21 @@ using UnityEngine;
 using System.Collections;
 using UnityEngine.SceneManagement;
 using Unity.VisualScripting;
+using System.Runtime.InteropServices;
 
 public class ShopController : MonoBehaviour {
-	
-	/// <summary>
-	/// This class handles all touch events on shop buttons.
-	/// It also checks if user has enough money to buy an item, 
-	/// Checks if an items is already purchased,
-	/// and saves the purchased items into playerprefs for further usage.
-	/// </summary>
 
-	private float buttonAnimationSpeed = 9;		//speed on animation effect when tapped on button
+    /// <summary>
+    /// This class handles all touch events on shop buttons.
+    /// It also checks if user has enough money to buy an item, 
+    /// Checks if an items is already purchased,
+    /// and saves the purchased items into playerprefs for further usage.
+    /// </summary>
+
+    [DllImport("__Internal")]
+    private static extern void AddScoreExtern(int value);
+
+    private float buttonAnimationSpeed = 9;		//speed on animation effect when tapped on button
 	private bool canTap = true;					//flag to prevent double tap
 
 	public AudioClip coinsCheckout;				//buy sfx

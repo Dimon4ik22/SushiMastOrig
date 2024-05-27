@@ -3370,7 +3370,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1373752675}
   m_LocalRotation: {x: 0, y: -1, z: 0, w: -0.00000004371139}
-  m_LocalPosition: {x: -0.0015252895, y: -0.03923264, z: 115.771996}
+  m_LocalPosition: {x: -0.0015252895, y: 0.05, z: 115.771996}
   m_LocalScale: {x: 0.23403244, y: 0.90899545, z: 575.95013}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3385,17 +3385,17 @@ TextMesh:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1373752675}
-  m_Text: Level Selection
+  m_Text: "\u0412\u044B\u0431\u043E\u0440 \u0443\u0440\u043E\u0432\u043D\u044F"
   m_OffsetZ: 0
   m_CharacterSize: 0.09
   m_LineSpacing: 1
   m_Anchor: 4
   m_Alignment: 1
   m_TabSize: 4
-  m_FontSize: 0
-  m_FontStyle: 0
+  m_FontSize: 56
+  m_FontStyle: 1
   m_RichText: 1
-  m_Font: {fileID: 12800000, guid: 23b4094420dceae4cac02e3ab769be9e, type: 3}
+  m_Font: {fileID: 12800000, guid: b7ffc4ef6521c874583d009797aaf63a, type: 3}
   m_Color:
     serializedVersion: 2
     rgba: 4282795590
@@ -3419,7 +3419,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 23b4094420dceae4cac02e3ab769be9e, type: 3}
+  - {fileID: 2100000, guid: b7ffc4ef6521c874583d009797aaf63a, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
