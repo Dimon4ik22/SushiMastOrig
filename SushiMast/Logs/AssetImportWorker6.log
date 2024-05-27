@@ -559,3 +559,14 @@ Received Import Request.
 Start importing Assets/HappyBurgerShop/Scripts/Ads/YandexAds.cs using Guid(f353eb8751b65a740a0860cefb09b5aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '394f2f69e5ee15076e2fcdc92f0f3554') in 0.001995 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\New Programs\Unity Projects (Git)\SushiMastOrig\SushiMast\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\New Programs\Unity Projects (Git)\SushiMastOrig\SushiMast\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  0.856 seconds
+Refreshing native plugins compatible for Editor in 3.23 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for WebGL target not found

@@ -1006,8 +1006,8 @@ GameObject:
   - component: {fileID: 518565812}
   - component: {fileID: 518565811}
   - component: {fileID: 518565810}
-  - component: {fileID: 518565809}
   - component: {fileID: 518565814}
+  - component: {fileID: 518565815}
   m_Layer: 0
   m_Name: Button-VideoAds
   m_TagString: Untagged
@@ -1015,19 +1015,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &518565809
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 518565808}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f596653c558fe104f8e6ff202b0edb5b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isSaveMe: 0
 --- !u!23 &518565810
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1128,6 +1115,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   intensity: 1.1
   animSpeed: 1
+--- !u!114 &518565815
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 518565808}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f353eb8751b65a740a0860cefb09b5aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &749702622
 GameObject:
   m_ObjectHideFlags: 0
