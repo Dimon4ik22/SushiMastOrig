@@ -289,6 +289,7 @@
 -analyzer:"C:/New Programs/Unity Engine/2022.3.1f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 "Assets/HappyBurgerShop/Scripts/Ads/UnityAdsInitializer.cs"
 "Assets/HappyBurgerShop/Scripts/Ads/UnityAdsRewardedButton.cs"
+"Assets/HappyBurgerShop/Scripts/Ads/YandexAds.cs"
 "Assets/HappyBurgerShop/Scripts/ButtonCompl.cs"
 "Assets/HappyBurgerShop/Scripts/Career/CareerLevelSetup.cs"
 "Assets/HappyBurgerShop/Scripts/Career/CareerMapManager.cs"

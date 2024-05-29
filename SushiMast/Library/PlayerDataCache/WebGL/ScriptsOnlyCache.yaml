@@ -23,6 +23,7 @@ ScriptsOnlyBuild:
     - TextMeshController
     - UnityAdsInitializer
     - UnityAdsRewardedButton
+    - YandexAds
     - customerMoneyController
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
@@ -136,31 +137,31 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 18292}
     - Class: 114
-      Script: {instanceID: 18972}
+      Script: {instanceID: 18974}
     - Class: 114
-      Script: {instanceID: 19956}
+      Script: {instanceID: 19958}
     - Class: 114
-      Script: {instanceID: 20280}
+      Script: {instanceID: 20282}
     - Class: 114
-      Script: {instanceID: 20460}
+      Script: {instanceID: 20462}
     - Class: 114
-      Script: {instanceID: 20576}
+      Script: {instanceID: 20578}
     - Class: 114
-      Script: {instanceID: 20742}
+      Script: {instanceID: 20744}
     - Class: 114
-      Script: {instanceID: 20788}
+      Script: {instanceID: 20790}
     - Class: 114
-      Script: {instanceID: 20958}
+      Script: {instanceID: 20960}
     - Class: 114
-      Script: {instanceID: 21044}
+      Script: {instanceID: 21046}
     - Class: 114
-      Script: {instanceID: 21412}
+      Script: {instanceID: 21414}
     - Class: 114
-      Script: {instanceID: 21580}
+      Script: {instanceID: 21582}
     - Class: 114
-      Script: {instanceID: 21660}
+      Script: {instanceID: 21662}
     - Class: 114
-      Script: {instanceID: 21756}
+      Script: {instanceID: 21758}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 124
@@ -203,15 +204,15 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 17204}
     - Class: 114
-      Script: {instanceID: 19090}
+      Script: {instanceID: 19092}
     - Class: 114
-      Script: {instanceID: 19194}
+      Script: {instanceID: 19196}
     - Class: 114
-      Script: {instanceID: 19240}
+      Script: {instanceID: 19242}
     - Class: 114
-      Script: {instanceID: 19340}
+      Script: {instanceID: 19342}
     - Class: 114
-      Script: {instanceID: 20028}
+      Script: {instanceID: 20030}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 124
@@ -260,9 +261,9 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 18292}
     - Class: 114
-      Script: {instanceID: 20022}
+      Script: {instanceID: 20024}
     - Class: 114
-      Script: {instanceID: 20220}
+      Script: {instanceID: 20222}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 124
@@ -313,11 +314,11 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 18782}
     - Class: 114
-      Script: {instanceID: 20742}
+      Script: {instanceID: 18954}
     - Class: 114
-      Script: {instanceID: 21106}
+      Script: {instanceID: 21108}
     - Class: 114
-      Script: {instanceID: 21730}
+      Script: {instanceID: 21732}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 124
@@ -364,7 +365,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 18492}
     - Class: 114
-      Script: {instanceID: 21244}
+      Script: {instanceID: 21246}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 124
@@ -750,6 +751,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.UI
     className: Mask
+  - hash:
+      serializedVersion: 2
+      Hash: 751e5bae2a317288c2ab58d66687092b
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: YandexAds
   - hash:
       serializedVersion: 2
       Hash: 45fcec6303ee759a8198d826878899be

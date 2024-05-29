@@ -13,9 +13,6 @@ public class ShopController : MonoBehaviour {
     /// and saves the purchased items into playerprefs for further usage.
     /// </summary>
 
-    [DllImport("__Internal")]
-    private static extern void AddScoreExtern(int value);
-
     private float buttonAnimationSpeed = 9;		//speed on animation effect when tapped on button
 	private bool canTap = true;					//flag to prevent double tap
 
