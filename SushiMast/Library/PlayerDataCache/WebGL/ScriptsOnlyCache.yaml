@@ -22,7 +22,6 @@ ScriptsOnlyBuild:
     - ShopItemProperties
     - TextMeshController
     - UnityAdsInitializer
-    - UnityAdsRewardedButton
     - YandexAds
     - customerMoneyController
     Unity.Rider.Editor.dll:
@@ -129,39 +128,39 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 17496}
     - Class: 114
-      Script: {instanceID: 17618}
+      Script: {instanceID: 17620}
     - Class: 114
-      Script: {instanceID: 17820}
+      Script: {instanceID: 17822}
     - Class: 114
-      Script: {instanceID: 17990}
+      Script: {instanceID: 17992}
     - Class: 114
-      Script: {instanceID: 18292}
+      Script: {instanceID: 18294}
     - Class: 114
-      Script: {instanceID: 18974}
+      Script: {instanceID: 18956}
     - Class: 114
-      Script: {instanceID: 19958}
+      Script: {instanceID: 18976}
     - Class: 114
-      Script: {instanceID: 20282}
+      Script: {instanceID: 19960}
     - Class: 114
-      Script: {instanceID: 20462}
+      Script: {instanceID: 20284}
     - Class: 114
-      Script: {instanceID: 20578}
+      Script: {instanceID: 20464}
     - Class: 114
-      Script: {instanceID: 20744}
+      Script: {instanceID: 20580}
     - Class: 114
-      Script: {instanceID: 20790}
+      Script: {instanceID: 20792}
     - Class: 114
-      Script: {instanceID: 20960}
+      Script: {instanceID: 20962}
     - Class: 114
-      Script: {instanceID: 21046}
+      Script: {instanceID: 21048}
     - Class: 114
-      Script: {instanceID: 21414}
+      Script: {instanceID: 21416}
     - Class: 114
-      Script: {instanceID: 21582}
+      Script: {instanceID: 21584}
     - Class: 114
-      Script: {instanceID: 21662}
+      Script: {instanceID: 21664}
     - Class: 114
-      Script: {instanceID: 21758}
+      Script: {instanceID: 21760}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 124
@@ -204,15 +203,15 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 17204}
     - Class: 114
-      Script: {instanceID: 19092}
+      Script: {instanceID: 19094}
     - Class: 114
-      Script: {instanceID: 19196}
+      Script: {instanceID: 19198}
     - Class: 114
-      Script: {instanceID: 19242}
+      Script: {instanceID: 19244}
     - Class: 114
-      Script: {instanceID: 19342}
+      Script: {instanceID: 19344}
     - Class: 114
-      Script: {instanceID: 20030}
+      Script: {instanceID: 20032}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 124
@@ -259,11 +258,11 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 18292}
+      Script: {instanceID: 18294}
     - Class: 114
-      Script: {instanceID: 20024}
+      Script: {instanceID: 20026}
     - Class: 114
-      Script: {instanceID: 20222}
+      Script: {instanceID: 20224}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 124
@@ -310,15 +309,15 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 16954}
     - Class: 114
-      Script: {instanceID: 18292}
+      Script: {instanceID: 18294}
     - Class: 114
-      Script: {instanceID: 18782}
+      Script: {instanceID: 18784}
     - Class: 114
-      Script: {instanceID: 18954}
+      Script: {instanceID: 18956}
     - Class: 114
-      Script: {instanceID: 21108}
+      Script: {instanceID: 21110}
     - Class: 114
-      Script: {instanceID: 21732}
+      Script: {instanceID: 21734}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 124
@@ -363,9 +362,9 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 18492}
+      Script: {instanceID: 18494}
     - Class: 114
-      Script: {instanceID: 21246}
+      Script: {instanceID: 21248}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 124
@@ -753,7 +752,7 @@ ScriptsOnlyBuild:
     className: Mask
   - hash:
       serializedVersion: 2
-      Hash: 751e5bae2a317288c2ab58d66687092b
+      Hash: 775fb711c84c567d163b28b04a6ac6da
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: YandexAds

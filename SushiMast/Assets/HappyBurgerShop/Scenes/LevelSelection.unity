@@ -2941,10 +2941,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   label: {fileID: 398856203}
   levelID: 1
-  levelTime: 40
+  levelTime: 10
   levelComplexity: 4
   shopLocation: 1
-  levelMission: 70
+  levelMission: 10
   availableIngredients: 01000000020000000300000004000000
   availableDrinks: 65000000
   levelStarsGo: {fileID: 250293446}

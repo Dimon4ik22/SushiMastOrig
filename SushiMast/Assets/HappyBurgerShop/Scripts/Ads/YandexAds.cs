@@ -1,13 +1,16 @@
 using System.Collections;
 using System.Runtime.InteropServices;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class YandexAds : MonoBehaviour
 {
     [DllImport("__Internal")]
-    private static extern void Hello();
+    private static extern void AddMoneyExtern(int value1, int value2);
 
     private bool canTap = true;
+
+    public bool isSaveMe = false;
     void Update()
     {
         if (canTap)
@@ -34,14 +37,44 @@ public class YandexAds : MonoBehaviour
 
                 case "Button-VideoAds":
                     canTap = false;
-                    Hello();
-                    //hide videoAds button by moving it far away
-                    transform.position = new Vector3(transform.position.x, transform.position.y, 10000);
+                    AddMoneyExtern(100, 30);
+
                     StartCoroutine(reactiveTap());
 
                     break;
             }
         }
+    }
+    public void AddMoneyOrTime(string values)
+    {
+        // Разделяем строку на два значения
+        string[] splitValues = values.Split(',');
+        int value1 = int.Parse(splitValues[0]);
+        int value2 = int.Parse(splitValues[1]);
+
+        if (isSaveMe)
+        {
+            MainGameController.startTime = (int)Time.time + value2;
+            MainGameController.gameIsFinished = false;
+            GameObject egp = GameObject.FindGameObjectWithTag("EndGamePlane");
+            if (egp)
+            {
+                egp.SetActive(false);
+            }
+        }
+        else
+        {
+            PlayerPrefs.SetInt("PlayerMoney", PlayerPrefs.GetInt("PlayerMoney") + value1);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        }
+    }
+    public void MuteAudio()
+    {
+        AudioListener.volume = 0;
+    }
+    public void UnmuteAudio()
+    {
+        AudioListener.volume = 1;
     }
     IEnumerator reactiveTap()
     {

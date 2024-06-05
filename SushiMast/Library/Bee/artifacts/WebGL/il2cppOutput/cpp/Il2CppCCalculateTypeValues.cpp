@@ -7429,7 +7429,7 @@ struct UpdaterArray_tF8D43D2A3598E7C17ABB5308E83FDECF1F36A449  : public RuntimeO
 struct U3CU3Ec_t856624725DA5418B0F537E56F408847FF1DAB02B  : public RuntimeObject
 {
 };
-struct U3CreactiveTapU3Ed__6_tFCF1C0CFB2586C0EA422C8401568F4BD588FA252  : public RuntimeObject
+struct U3CreactiveTapU3Ed__10_t386BA026CC34C02984477F73A21C2A5B0370D704  : public RuntimeObject
 {
 	int32_t ___U3CU3E1__state;
 	RuntimeObject* ___U3CU3E2__current;
@@ -27966,6 +27966,7 @@ struct UnityAdsRewardedButton_t6BDA29F2734B24B099960480BC7223BFBC2D4C5B  : publi
 struct YandexAds_tF6CF6B041C448FB9B06FE02F11F05330AD5C293E  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
 	bool ___canTap;
+	bool ___isSaveMe;
 	RaycastHit_t6F30BD0B38B56401CA833A1B87BD74F2ACD2F2B5 ___hitInfo;
 	Ray_t2B1742D7958DC05BDC3EFC7461D3593E1430DC00 ___ray;
 };
@@ -39719,7 +39720,7 @@ const Il2CppTypeDefinitionSizes g_typeDefinitionSize3499 = { sizeof(U3CreactiveT
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize3500;
 const Il2CppTypeDefinitionSizes g_typeDefinitionSize3500 = { sizeof(UnityAdsRewardedButton_t6BDA29F2734B24B099960480BC7223BFBC2D4C5B), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize3501;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize3501 = { sizeof(U3CreactiveTapU3Ed__6_tFCF1C0CFB2586C0EA422C8401568F4BD588FA252), -1, 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize3501 = { sizeof(U3CreactiveTapU3Ed__10_t386BA026CC34C02984477F73A21C2A5B0370D704), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize3502;
 const Il2CppTypeDefinitionSizes g_typeDefinitionSize3502 = { sizeof(YandexAds_tF6CF6B041C448FB9B06FE02F11F05330AD5C293E), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize3503;

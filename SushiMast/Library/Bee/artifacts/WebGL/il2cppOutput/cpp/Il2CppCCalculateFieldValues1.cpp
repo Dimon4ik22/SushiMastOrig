@@ -1383,7 +1383,7 @@ struct MoreInfo_tB58ABF2D5D75E92D35BBC37192CD0D5C02C3F0FA  : public RuntimeObjec
 	int32_t ___Hash;
 	String_t* ___RemoteUrl;
 };
-struct U3CreactiveTapU3Ed__6_tFCF1C0CFB2586C0EA422C8401568F4BD588FA252  : public RuntimeObject
+struct U3CreactiveTapU3Ed__10_t386BA026CC34C02984477F73A21C2A5B0370D704  : public RuntimeObject
 {
 	int32_t ___U3CU3E1__state;
 	RuntimeObject* ___U3CU3E2__current;
@@ -5665,6 +5665,7 @@ struct UnityAdsRewardedButton_t6BDA29F2734B24B099960480BC7223BFBC2D4C5B  : publi
 struct YandexAds_tF6CF6B041C448FB9B06FE02F11F05330AD5C293E  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
 	bool ___canTap;
+	bool ___isSaveMe;
 	RaycastHit_t6F30BD0B38B56401CA833A1B87BD74F2ACD2F2B5 ___hitInfo;
 	Ray_t2B1742D7958DC05BDC3EFC7461D3593E1430DC00 ___ray;
 };
@@ -8108,10 +8109,10 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3500[9] =
 	static_cast<int32_t>(offsetof(UnityAdsRewardedButton_t6BDA29F2734B24B099960480BC7223BFBC2D4C5B, ___isSaveMe)),static_cast<int32_t>(offsetof(UnityAdsRewardedButton_t6BDA29F2734B24B099960480BC7223BFBC2D4C5B, ___canTap)),static_cast<int32_t>(offsetof(UnityAdsRewardedButton_t6BDA29F2734B24B099960480BC7223BFBC2D4C5B, ___zoneId)),static_cast<int32_t>(offsetof(UnityAdsRewardedButton_t6BDA29F2734B24B099960480BC7223BFBC2D4C5B, ___rewardCoins)),static_cast<int32_t>(offsetof(UnityAdsRewardedButton_t6BDA29F2734B24B099960480BC7223BFBC2D4C5B, ___extraTime)),static_cast<int32_t>(offsetof(UnityAdsRewardedButton_t6BDA29F2734B24B099960480BC7223BFBC2D4C5B, ___status)),static_cast<int32_t>(offsetof(UnityAdsRewardedButton_t6BDA29F2734B24B099960480BC7223BFBC2D4C5B, ___VideoAdHelperText)),static_cast<int32_t>(offsetof(UnityAdsRewardedButton_t6BDA29F2734B24B099960480BC7223BFBC2D4C5B, ___hitInfo)),static_cast<int32_t>(offsetof(UnityAdsRewardedButton_t6BDA29F2734B24B099960480BC7223BFBC2D4C5B, ___ray)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3501[3] = 
 {
-	static_cast<int32_t>(offsetof(U3CreactiveTapU3Ed__6_tFCF1C0CFB2586C0EA422C8401568F4BD588FA252, ___U3CU3E1__state)),static_cast<int32_t>(offsetof(U3CreactiveTapU3Ed__6_tFCF1C0CFB2586C0EA422C8401568F4BD588FA252, ___U3CU3E2__current)),static_cast<int32_t>(offsetof(U3CreactiveTapU3Ed__6_tFCF1C0CFB2586C0EA422C8401568F4BD588FA252, ___U3CU3E4__this)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3502[3] = 
+	static_cast<int32_t>(offsetof(U3CreactiveTapU3Ed__10_t386BA026CC34C02984477F73A21C2A5B0370D704, ___U3CU3E1__state)),static_cast<int32_t>(offsetof(U3CreactiveTapU3Ed__10_t386BA026CC34C02984477F73A21C2A5B0370D704, ___U3CU3E2__current)),static_cast<int32_t>(offsetof(U3CreactiveTapU3Ed__10_t386BA026CC34C02984477F73A21C2A5B0370D704, ___U3CU3E4__this)),};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3502[4] = 
 {
-	static_cast<int32_t>(offsetof(YandexAds_tF6CF6B041C448FB9B06FE02F11F05330AD5C293E, ___canTap)),static_cast<int32_t>(offsetof(YandexAds_tF6CF6B041C448FB9B06FE02F11F05330AD5C293E, ___hitInfo)),static_cast<int32_t>(offsetof(YandexAds_tF6CF6B041C448FB9B06FE02F11F05330AD5C293E, ___ray)),};
+	static_cast<int32_t>(offsetof(YandexAds_tF6CF6B041C448FB9B06FE02F11F05330AD5C293E, ___canTap)),static_cast<int32_t>(offsetof(YandexAds_tF6CF6B041C448FB9B06FE02F11F05330AD5C293E, ___isSaveMe)),static_cast<int32_t>(offsetof(YandexAds_tF6CF6B041C448FB9B06FE02F11F05330AD5C293E, ___hitInfo)),static_cast<int32_t>(offsetof(YandexAds_tF6CF6B041C448FB9B06FE02F11F05330AD5C293E, ___ray)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3503[8] = 
 {
 	static_cast<int32_t>(offsetof(ButtonCompl_tA7BCEC57ACAE5B4E158BA97D91A36B329AC4A469, ___customers)),static_cast<int32_t>(offsetof(ButtonCompl_tA7BCEC57ACAE5B4E158BA97D91A36B329AC4A469, ___ingredients)),static_cast<int32_t>(offsetof(ButtonCompl_tA7BCEC57ACAE5B4E158BA97D91A36B329AC4A469, ___isOrderReady)),static_cast<int32_t>(offsetof(ButtonCompl_tA7BCEC57ACAE5B4E158BA97D91A36B329AC4A469, ___isButtonPressed)),static_cast<int32_t>(offsetof(ButtonCompl_tA7BCEC57ACAE5B4E158BA97D91A36B329AC4A469, ___progressSlider)),static_cast<int32_t>(offsetof(ButtonCompl_tA7BCEC57ACAE5B4E158BA97D91A36B329AC4A469, ____fillImage)),static_cast<int32_t>(offsetof(ButtonCompl_tA7BCEC57ACAE5B4E158BA97D91A36B329AC4A469, ___buttonPressTime)),0,};

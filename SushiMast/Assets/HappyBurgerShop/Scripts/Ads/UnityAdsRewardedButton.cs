@@ -52,21 +52,21 @@ public class UnityAdsRewardedButton : MonoBehaviour {
 		#endif
 
 		//No video button if video ads is not ready to play
-		if(status) {
+		//if(status) {
 			
-			GetComponent<BoxCollider>().enabled = true;
-			GetComponent<Renderer>().enabled = true;
-			if (VideoAdHelperText)
-				VideoAdHelperText.SetActive (true);
+		//	GetComponent<BoxCollider>().enabled = true;
+		//	GetComponent<Renderer>().enabled = true;
+		//	if (VideoAdHelperText)
+		//		VideoAdHelperText.SetActive (true);
 
-		} else {
+		//} else {
 			
-			GetComponent<BoxCollider>().enabled = false;
-			GetComponent<Renderer>().enabled = false;
-			if (VideoAdHelperText)
-				VideoAdHelperText.SetActive (false);
+		//	GetComponent<BoxCollider>().enabled = false;
+		//	GetComponent<Renderer>().enabled = false;
+		//	if (VideoAdHelperText)
+		//		VideoAdHelperText.SetActive (false);
 
-		}
+		//}
 
 		if(canTap)
 			touchManager();
