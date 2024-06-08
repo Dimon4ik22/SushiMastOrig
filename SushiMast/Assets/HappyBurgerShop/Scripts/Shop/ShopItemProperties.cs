@@ -15,9 +15,9 @@ public class ShopItemProperties : MonoBehaviour {
 	void Awake (){
 
 		if(PlayerPrefs.GetInt("shopItem-" + itemIndex.ToString()) != 1)
-			priceTag.GetComponent<TextMesh>().text = "Price: $" + itemPrice;
+			priceTag.GetComponent<TextMesh>().text = "Цена: " + itemPrice + "$";
 		else 
-			priceTag.GetComponent<TextMesh>().text = "Purchased";
+			priceTag.GetComponent<TextMesh>().text = "Куплено!";
 		
 	}
 }

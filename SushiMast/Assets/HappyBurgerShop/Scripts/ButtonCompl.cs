@@ -60,9 +60,10 @@ public class ButtonCompl : MonoBehaviour
                 progressSlider.value = 0f;
                 progressSlider.gameObject.SetActive(false);
             }
-            else if(PlayerPrefs.GetInt("shopItem-1") == 1)
+            else if(PlayerPrefs.GetInt("shopItem-3") == 1)
             {
                 SetOrderReady();
+                progressSlider.gameObject.SetActive(false);
             }
         }
     }

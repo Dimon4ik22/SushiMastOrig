@@ -155,32 +155,38 @@ public class CustomerController : MonoBehaviour {
 			availableIngredients [a] = PlayerPrefs.GetInt ("careerIngredient_" + a);
 			//print ("ingredient " + a + " = " + availableIngredients [a]);
 		}
-       
 
-        //We need to make an order for this customer at runtime!
-        for (int n = 0; n < customerOrderSize; n++) {
 
-			//set starting and end index with the IDs of bottom & top bread
-			if (n == 0) {
-				orderIngredientsIDs [0] = 1;
-			} else if (n == customerOrderSize - 1) {
-				orderIngredientsIDs [n] = 2;
-			} else {
-				//otherwise, set random ingredients inside the order array
-				orderIngredientsIDs [n] = availableIngredients [Random.Range (2, availableIngredients.Length)];
-			}
-		}
+        for (int n = 0; n < customerOrderSize; n++)
+        {
 
-		//Uncomment this to show debug informations
-		/*productIngredients = customerOrderSize;
+            // Установить стартовые и конечные индексы с ID нижнего и верхнего мнгридиента
+            if (n == 0)
+            {
+                orderIngredientsIDs[0] = 1;
+            }
+            else if (n == 1)
+            {
+                orderIngredientsIDs[1] = 2;
+            }
+            else
+            {
+                // В противном случае установить случайные ингредиенты внутри массива заказа
+                orderIngredientsIDs[n] = availableIngredients[Random.Range(2, availableIngredients.Length)];
+            }
+        }
+
+
+        //Uncomment this to show debug informations
+        /*productIngredients = customerOrderSize;
 		productIngredientsIDs = new int[productIngredients];
 		for(int i = 0; i < productIngredients; i++) {
 			productIngredientsIDs[i] = orderIngredientsIDs [i];
 			print("My order ingredients ID[" + i + "] is: " + productIngredientsIDs[i]);
 		}*/
-			
-		//tell MainGameController to update order helper status
-		gameController.GetComponent<MainGameController>().updateOrderHelpers(orderIngredientsIDs);
+
+        //tell MainGameController to update order helper status
+        gameController.GetComponent<MainGameController>().updateOrderHelpers(orderIngredientsIDs);
 
 	}
 
@@ -303,9 +309,7 @@ public class CustomerController : MonoBehaviour {
 
 			//if we have purchased additional items for our restaurant, we should receive more tips
 			int tips = 0;
-			if (PlayerPrefs.GetInt("shopItem-1") == 1) tips += 1;   //if we have seats
-			if (PlayerPrefs.GetInt("shopItem-2") == 1) tips += 2;   //if we have music player
-			if (PlayerPrefs.GetInt("shopItem-3") == 1) tips += 3;   //if we have flowers
+			if (PlayerPrefs.GetInt("shopItem-1") == 1) tips += 5;   //if we have seats
 
 			//productPrice is the sum of all ingredients price
 			int productPrice = 0;
