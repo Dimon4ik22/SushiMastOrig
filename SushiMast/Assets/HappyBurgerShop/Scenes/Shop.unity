@@ -310,7 +310,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: f37ced6229d4e4c46a0d33dc0b5d1d9e, type: 3}
+  m_audioClip: {fileID: 8300000, guid: f06e1f3f2735ca34b9fec8cd5bbe41d8, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -1283,7 +1283,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemIndex: 2
-  itemPrice: 450
+  itemPrice: 0
   priceTag: {fileID: 209552985}
 --- !u!23 &950623682
 MeshRenderer:
@@ -1784,7 +1784,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemIndex: 3
-  itemPrice: 750
+  itemPrice: 0
   priceTag: {fileID: 1696066038}
 --- !u!23 &1132734199
 MeshRenderer:

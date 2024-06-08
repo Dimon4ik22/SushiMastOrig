@@ -25,7 +25,7 @@ public class MainGameController : MonoBehaviour {
 	static public int levelMission2;		//to beat the level with 2 star
 	static public int levelMission3;		//to beat the level with 3 star
 	static public int requiredBalance;		//dynamiclly changes based on current user money
-	static public int acquiredStars;		//how many stars player received in this level
+	static public int acquiredStars;        //how many stars player received in this level
 
 	[Header("Public Game Objects")]
 	public GameObject[] customers;			//list of all available customers (different patience and textures)
@@ -82,7 +82,7 @@ public class MainGameController : MonoBehaviour {
 	public static event UnityAction<GameObject> OnCustomerSpawned;
 
 
-	public void Awake (){
+    public void Awake (){
 		Init();
 	}
 
@@ -160,17 +160,16 @@ public class MainGameController : MonoBehaviour {
 
 	}
 
-
-	/// <summary>
-	/// Moves to object from a to b, by the given delay and speed
-	/// </summary>
-	/// <returns>The to position.</returns>
-	/// <param name="g">The green component.</param>
-	/// <param name="from">From.</param>
-	/// <param name="to">To.</param>
-	/// <param name="d">D.</param>
-	/// <param name="s">S.</param>
-	IEnumerator moveToPosition(GameObject g, Vector3 from, Vector3 to, float d, float s) {
+    /// <summary>
+    /// Moves to object from a to b, by the given delay and speed
+    /// </summary>
+    /// <returns>The to position.</returns>
+    /// <param name="g">The green component.</param>
+    /// <param name="from">From.</param>
+    /// <param name="to">To.</param>
+    /// <param name="d">D.</param>
+    /// <param name="s">S.</param>
+    IEnumerator moveToPosition(GameObject g, Vector3 from, Vector3 to, float d, float s) {
 
 		yield return new WaitForSeconds(d);
 		float t = 0;
@@ -390,8 +389,11 @@ public class MainGameController : MonoBehaviour {
 			gameIsFinished = true;						//announce the new status to other classes
 			UiEndGamePanel.SetActive(true);				//show the endGame plane
 			StartCoroutine(moveToPosition (UiEndGamePanel, new Vector3(-20, 0, -3) , new Vector3 (0, 0, -3), 0, 1.7f));
-			UiEndGameStatus.GetComponent<Renderer>().material.mainTexture = UiEndGameTextures[1];	//show the correct texture for result
-			playNormalSfx(timeEndSfx);
+			UiEndGameStatus.GetComponent<Renderer>().material.mainTexture = UiEndGameTextures[1];   //show the correct texture for result
+            Camera camera = Camera.main;
+            AudioSource cameraAudioSource = camera.GetComponent<AudioSource>();
+            cameraAudioSource.enabled = false;
+            playNormalSfx(timeEndSfx);
 			yield return new WaitForSeconds(2.0f);
 			playNormalSfx(loseSfx);
 			

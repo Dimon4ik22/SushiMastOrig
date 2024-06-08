@@ -118,7 +118,8 @@ public class ShopController : MonoBehaviour {
 						playSfx(coinsCheckout);
 						yield return new WaitForSeconds(1);
 						SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-					}
+                        PlayerPrefs.SetInt("PurchasedDrinkID", 103);
+                    }
 					break;
 					
 				case "shopItem-3":
@@ -131,7 +132,6 @@ public class ShopController : MonoBehaviour {
 						playSfx(coinsCheckout);
 						yield return new WaitForSeconds(1);
 						SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-                        PlayerPrefs.SetInt("PurchasedDrinkID", 103);
                     }
                     break;
 				
