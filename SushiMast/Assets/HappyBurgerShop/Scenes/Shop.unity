@@ -312,7 +312,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: f06e1f3f2735ca34b9fec8cd5bbe41d8, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.25
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -1283,7 +1283,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemIndex: 2
-  itemPrice: 0
+  itemPrice: 500
   priceTag: {fileID: 209552985}
 --- !u!23 &950623682
 MeshRenderer:
@@ -1784,7 +1784,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemIndex: 3
-  itemPrice: 0
+  itemPrice: 1100
   priceTag: {fileID: 1696066038}
 --- !u!23 &1132734199
 MeshRenderer:
