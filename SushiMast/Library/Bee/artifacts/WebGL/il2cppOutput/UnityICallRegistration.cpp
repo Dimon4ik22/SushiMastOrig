@@ -534,6 +534,10 @@ void RegisterAllStrippedInternalCalls()
 
 	//Start Registrations for type : UnityEngine.AudioListener
 
+		//System.Void UnityEngine.AudioListener::set_pause(System.Boolean)
+		void Register_UnityEngine_AudioListener_set_pause();
+		Register_UnityEngine_AudioListener_set_pause();
+
 		//System.Void UnityEngine.AudioListener::set_volume(System.Single)
 		void Register_UnityEngine_AudioListener_set_volume();
 		Register_UnityEngine_AudioListener_set_volume();

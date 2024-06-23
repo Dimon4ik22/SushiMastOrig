@@ -2242,6 +2242,8 @@ inline AudioSourceU5BU5D_tBBF6E920E0DC80D53D4BB2A8D4C80D244EF170B2* Object_FindO
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AudioManager_RegisterAudioSource_m8ED91E5BDFDD361525552E6DF57A2462F2D79384 (AudioManager_t4BE66A4A0E184D85AF74C37BC93BFBEC52953C7B* __this, AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299* ___0_source, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AudioManager_SetMuteState_m4FAF54F1983115DB0610D27FB371A189021EDC64 (AudioManager_t4BE66A4A0E184D85AF74C37BC93BFBEC52953C7B* __this, bool ___0_mute, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AudioManager_Silence_mCFF17182218EE1BBBC2B103303004F39A9E296E7 (AudioManager_t4BE66A4A0E184D85AF74C37BC93BFBEC52953C7B* __this, bool ___0_silence, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AudioListener_set_pause_m4D52C9FFC6B10B0F281329FA0FB3CE2C64894F33 (bool ___0_value, const RuntimeMethod* method) ;
 inline void List_1__ctor_m1572AF991CD3CD21B43B0D6F699FE6296DEDF9E7 (List_1_t0EDD1795F87849390F5CA17CBABE75183BE4E235* __this, const RuntimeMethod* method)
 {
 	((  void (*) (List_1_t0EDD1795F87849390F5CA17CBABE75183BE4E235*, const RuntimeMethod*))List_1__ctor_m7F078BB342729BDF11327FD89D7872265328F690_gshared)(__this, method);
@@ -6812,6 +6814,50 @@ IL_0024:
 	{
 		bool L_10 = __this->___isMuted;
 		AudioManager_SetMuteState_m4FAF54F1983115DB0610D27FB371A189021EDC64(__this, L_10, NULL);
+		return;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AudioManager_OnApplicationFocus_mCF6362976976CAAC01AB785062A7CA7E996F63E9 (AudioManager_t4BE66A4A0E184D85AF74C37BC93BFBEC52953C7B* __this, bool ___0_hasFocus, const RuntimeMethod* method) 
+{
+	{
+		bool L_0 = ___0_hasFocus;
+		AudioManager_Silence_mCFF17182218EE1BBBC2B103303004F39A9E296E7(__this, (bool)((((int32_t)L_0) == ((int32_t)0))? 1 : 0), NULL);
+		return;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AudioManager_OnApplicationPause_mDD60838651872AB9647D5CD3D3DEB16DD7F467F4 (AudioManager_t4BE66A4A0E184D85AF74C37BC93BFBEC52953C7B* __this, bool ___0_isPaused, const RuntimeMethod* method) 
+{
+	{
+		bool L_0 = ___0_isPaused;
+		AudioManager_Silence_mCFF17182218EE1BBBC2B103303004F39A9E296E7(__this, L_0, NULL);
+		return;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AudioManager_Silence_mCFF17182218EE1BBBC2B103303004F39A9E296E7 (AudioManager_t4BE66A4A0E184D85AF74C37BC93BFBEC52953C7B* __this, bool ___0_silence, const RuntimeMethod* method) 
+{
+	int32_t G_B3_0 = 0;
+	{
+		bool L_0 = ___0_silence;
+		AudioListener_set_pause_m4D52C9FFC6B10B0F281329FA0FB3CE2C64894F33(L_0, NULL);
+		bool L_1 = ___0_silence;
+		if (L_1)
+		{
+			goto IL_000c;
+		}
+	}
+	{
+		G_B3_0 = 1;
+		goto IL_000d;
+	}
+
+IL_000c:
+	{
+		G_B3_0 = 0;
+	}
+
+IL_000d:
+	{
+		AudioListener_set_volume_m72BAF2D558A5449091A59630EBF48095DEB4C721(((float)G_B3_0), NULL);
 		return;
 	}
 }

@@ -126,43 +126,43 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 17052}
     - Class: 114
-      Script: {instanceID: 17496}
+      Script: {instanceID: 17364}
     - Class: 114
-      Script: {instanceID: 17620}
+      Script: {instanceID: 17498}
     - Class: 114
-      Script: {instanceID: 17822}
+      Script: {instanceID: 17622}
     - Class: 114
-      Script: {instanceID: 17992}
+      Script: {instanceID: 17824}
     - Class: 114
-      Script: {instanceID: 18294}
+      Script: {instanceID: 17994}
     - Class: 114
-      Script: {instanceID: 18956}
+      Script: {instanceID: 18298}
     - Class: 114
-      Script: {instanceID: 18976}
+      Script: {instanceID: 18960}
     - Class: 114
-      Script: {instanceID: 19960}
+      Script: {instanceID: 18980}
     - Class: 114
-      Script: {instanceID: 20284}
+      Script: {instanceID: 19964}
     - Class: 114
-      Script: {instanceID: 20464}
+      Script: {instanceID: 20288}
     - Class: 114
-      Script: {instanceID: 20580}
+      Script: {instanceID: 20468}
     - Class: 114
-      Script: {instanceID: 20792}
+      Script: {instanceID: 20584}
     - Class: 114
-      Script: {instanceID: 20962}
+      Script: {instanceID: 20796}
     - Class: 114
-      Script: {instanceID: 21048}
+      Script: {instanceID: 20966}
     - Class: 114
-      Script: {instanceID: 21416}
+      Script: {instanceID: 21052}
     - Class: 114
-      Script: {instanceID: 21584}
+      Script: {instanceID: 21420}
     - Class: 114
-      Script: {instanceID: 21664}
+      Script: {instanceID: 21588}
     - Class: 114
-      Script: {instanceID: 21760}
+      Script: {instanceID: 21668}
     - Class: 114
-      Script: {instanceID: 30390}
+      Script: {instanceID: 21764}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 124
@@ -205,13 +205,13 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 17204}
     - Class: 114
-      Script: {instanceID: 19094}
+      Script: {instanceID: 19098}
     - Class: 114
-      Script: {instanceID: 19244}
+      Script: {instanceID: 19248}
     - Class: 114
-      Script: {instanceID: 19344}
+      Script: {instanceID: 19348}
     - Class: 114
-      Script: {instanceID: 20032}
+      Script: {instanceID: 20036}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 124
@@ -258,13 +258,13 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 18294}
+      Script: {instanceID: 17364}
     - Class: 114
-      Script: {instanceID: 20026}
+      Script: {instanceID: 18298}
     - Class: 114
-      Script: {instanceID: 20224}
+      Script: {instanceID: 20030}
     - Class: 114
-      Script: {instanceID: 30390}
+      Script: {instanceID: 20228}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 124
@@ -311,17 +311,17 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 16954}
     - Class: 114
-      Script: {instanceID: 18294}
+      Script: {instanceID: 17364}
     - Class: 114
-      Script: {instanceID: 18784}
+      Script: {instanceID: 18298}
     - Class: 114
-      Script: {instanceID: 18956}
+      Script: {instanceID: 18788}
     - Class: 114
-      Script: {instanceID: 21110}
+      Script: {instanceID: 18960}
     - Class: 114
-      Script: {instanceID: 21734}
+      Script: {instanceID: 21114}
     - Class: 114
-      Script: {instanceID: 30390}
+      Script: {instanceID: 21738}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 124
@@ -366,11 +366,11 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 18494}
+      Script: {instanceID: 17364}
     - Class: 114
-      Script: {instanceID: 21248}
+      Script: {instanceID: 18498}
     - Class: 114
-      Script: {instanceID: 30390}
+      Script: {instanceID: 21252}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 124
@@ -500,6 +500,12 @@ ScriptsOnlyBuild:
     className: RawImage
   - hash:
       serializedVersion: 2
+      Hash: 751e5bae2a317288c2ab58d66687092b
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: AudioManager
+  - hash:
+      serializedVersion: 2
       Hash: f427e60210e74e8d8ecdffcbb857baf9
     assemblyName: Assembly-CSharp
     namespaceName: 
@@ -624,6 +630,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.UI
     className: ToggleGroup
+  - hash:
+      serializedVersion: 2
+      Hash: 751e5bae2a317288c2ab58d66687092b
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: AudioManagerLoader
   - hash:
       serializedVersion: 2
       Hash: 751e5bae2a317288c2ab58d66687092b
@@ -1356,18 +1368,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
-  - hash:
-      serializedVersion: 2
-      Hash: 751e5bae2a317288c2ab58d66687092b
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: AudioManager
-  - hash:
-      serializedVersion: 2
-      Hash: 751e5bae2a317288c2ab58d66687092b
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: AudioManagerLoader
   platform: 20
   scenePathNames:
   - Assets/HappyBurgerShop/Scenes/Init.unity
