@@ -11,17 +11,19 @@ public class YandexAds : MonoBehaviour
     private bool canTap = true;
 
     public bool isSaveMe = false;
+
     void Update()
     {
         if (canTap)
             touchManager();
     }
+
     private RaycastHit hitInfo;
     private Ray ray;
+
     void touchManager()
     {
-
-        //Mouse of touch?
+        //Mouse or touch?
         if (Input.touches.Length > 0 && Input.touches[0].phase == TouchPhase.Ended)
             ray = Camera.main.ScreenPointToRay(Input.touches[0].position);
         else if (Input.GetMouseButtonUp(0))
@@ -34,27 +36,26 @@ public class YandexAds : MonoBehaviour
             GameObject objectHit = hitInfo.transform.gameObject;
             switch (objectHit.name)
             {
-
                 case "Button-VideoAds":
                     canTap = false;
-                    AddMoneyExtern(100, 30);
-
+                    AddMoneyExtern(100, 45);
+                    MuteAudio();
                     StartCoroutine(reactiveTap());
-
                     break;
             }
         }
     }
+
     public void AddMoneyOrTime(string values)
     {
-        // Разделяем строку на два значения
+        // Split the string into two values
         string[] splitValues = values.Split(',');
         int value1 = int.Parse(splitValues[0]);
         int value2 = int.Parse(splitValues[1]);
 
         if (isSaveMe)
         {
-            MainGameController.startTime = (int)Time.time + value2;
+            MainGameController.startTime += value2;
             MainGameController.gameIsFinished = false;
             GameObject egp = GameObject.FindGameObjectWithTag("EndGamePlane");
             if (egp)
@@ -67,15 +68,20 @@ public class YandexAds : MonoBehaviour
             PlayerPrefs.SetInt("PlayerMoney", PlayerPrefs.GetInt("PlayerMoney") + value1);
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
+
+        UnmuteAudio();
     }
+
     public void MuteAudio()
     {
         AudioListener.volume = 0;
     }
+
     public void UnmuteAudio()
     {
         AudioListener.volume = 1;
     }
+
     IEnumerator reactiveTap()
     {
         yield return new WaitForSeconds(1.0f);

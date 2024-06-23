@@ -1,6 +1,7 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - AudioManager
     - ButtonCompl
     - CareerLevelSetup
     - CareerMapManager
@@ -30,8 +31,6 @@ ScriptsOnlyBuild:
     - TMPro.TMP_Settings
     - TMPro.TMP_SpriteAsset
     - TMPro.TMP_StyleSheet
-    Unity.Timeline.Editor.dll:
-    - TimelineProjectSettings
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
@@ -162,6 +161,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 21664}
     - Class: 114
       Script: {instanceID: 21760}
+    - Class: 114
+      Script: {instanceID: 30390}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 124
@@ -262,6 +263,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 20026}
     - Class: 114
       Script: {instanceID: 20224}
+    - Class: 114
+      Script: {instanceID: 30390}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 124
@@ -317,6 +320,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 21110}
     - Class: 114
       Script: {instanceID: 21734}
+    - Class: 114
+      Script: {instanceID: 30390}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 124
@@ -364,6 +369,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 18494}
     - Class: 114
       Script: {instanceID: 21248}
+    - Class: 114
+      Script: {instanceID: 30390}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 124
@@ -1349,6 +1356,18 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: 751e5bae2a317288c2ab58d66687092b
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: AudioManager
+  - hash:
+      serializedVersion: 2
+      Hash: 751e5bae2a317288c2ab58d66687092b
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: AudioManagerLoader
   platform: 20
   scenePathNames:
   - Assets/HappyBurgerShop/Scenes/Init.unity
@@ -1356,4 +1375,4 @@ ScriptsOnlyBuild:
   - Assets/HappyBurgerShop/Scenes/LevelSelection.unity
   - Assets/HappyBurgerShop/Scenes/Game.unity
   - Assets/HappyBurgerShop/Scenes/Shop.unity
-  playerPath: C:/New Programs/Unity Builds/SuhiMast
+  playerPath: C:/New Programs/Unity Builds

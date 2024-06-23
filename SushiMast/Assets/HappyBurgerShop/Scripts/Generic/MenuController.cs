@@ -2,198 +2,190 @@ using UnityEngine;
 using System.Collections;
 using UnityEngine.SceneManagement;
 
-public class MenuController : MonoBehaviour {
-	
-	/// <summary>
-	/// This class handles all touch events on buttons, and also updates the 
-	/// player status (available-money) on screen.
-	/// </summary>
+public class MenuController : MonoBehaviour
+{
+    public static string gameBundleName = "com.yourcompany.yourgamename";
+    public static string gameName = "gameName";
 
-	//This string is used for share & rate button and should match the exact bundle name you set in BuildSettings
-	public static string gameBundleName = "com.yourcompany.yourgamename";
-	public static string gameName = "gameName"; //custom game name used when player wants to share your game via social media apps
+    private float buttonAnimationSpeed = 9;
+    private bool canTap = true;
 
-	private float buttonAnimationSpeed = 9;		//speed on animation effect when tapped on button
-	private bool canTap = true;					//flag to prevent double tap
+    public GameObject playerMoney;
+    private int availableMoney;
 
-	public GameObject playerMoney;				//Reference to UI 3d text
-	private int availableMoney;					//saved player money
+    public AudioClip tapSfx;
 
-	public AudioClip tapSfx;					//tap sound for buttons click
+    private GameObject _muteButton;
+    private GameObject _unMuteButton;
+    private AudioSource audioSource;
 
-	private bool isMuted = false;
+    void Awake()
+    {
+        Time.timeScale = 1.0f;
 
-	private GameObject _muteButton;
-	private GameObject _unMuteButton;
+        availableMoney = PlayerPrefs.GetInt("PlayerMoney");
+        playerMoney.GetComponent<TextMesh>().text = "Деньги: " + availableMoney;
 
-	/// <summary>
-	/// Init. Updates the 3d texts with saved values fetched from playerprefs.
-	/// </summary>
-	void Awake (){
-		
-		//PlayerPrefs.DeleteAll();
-		Time.timeScale = 1.0f;
-
-		//Updates 3d text with saved values fetched from playerprefs
-		availableMoney = PlayerPrefs.GetInt("PlayerMoney");
-		playerMoney.GetComponent<TextMesh>().text = "Деньги: " + availableMoney;
-	}
+        if (AudioManager.Instance != null)
+        {
+            AudioManager.Instance.LoadMuteState();
+        }
+    }
 
     void Start()
     {
         _muteButton = GameObject.Find("Button-Mute");
         _unMuteButton = GameObject.Find("Button-UnMute");
 
-        // Загрузка состояния кнопки из PlayerPrefs
-        isMuted = PlayerPrefs.GetInt("IsMuted", 0) == 1;
+        audioSource = GetComponent<AudioSource>();
+        if (audioSource != null)
+        {
+            AudioManager.Instance?.RegisterAudioSource(audioSource);
+        }
 
-        // Установка состояния кнопок в соответствии с загруженным значением
-        if (isMuted)
+        UpdateMuteButtons();
+    }
+
+    private void OnDestroy()
+    {
+        if (audioSource != null)
+        {
+            AudioManager.Instance?.UnregisterAudioSource(audioSource);
+        }
+    }
+
+    void Update()
+    {
+        if (canTap)
+        {
+            StartCoroutine(tapManager());
+        }
+    }
+
+    private void UpdateMuteButtons()
+    {
+        if (AudioManager.Instance != null && AudioManager.Instance.GetMuteState())
         {
             _muteButton.SetActive(false);
             _unMuteButton.SetActive(true);
-            AudioListener.pause = true;
         }
         else
         {
             _muteButton.SetActive(true);
             _unMuteButton.SetActive(false);
-            AudioListener.pause = false;
         }
     }
 
-    /// <summary>
-    /// FSM
-    /// </summary>
-    void Update (){	
-		if(canTap) {
-			StartCoroutine(tapManager());
-		}
-	}
+    private RaycastHit hitInfo;
+    private Ray ray;
+    IEnumerator tapManager()
+    {
+        if (Input.touches.Length > 0 && Input.touches[0].phase == TouchPhase.Ended)
+            ray = Camera.main.ScreenPointToRay(Input.touches[0].position);
+        else if (Input.GetMouseButtonUp(0))
+            ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        else
+            yield break;
 
+        if (Physics.Raycast(ray, out hitInfo))
+        {
+            GameObject objectHit = hitInfo.transform.gameObject;
+            switch (objectHit.name)
+            {
+                case "Button-01":
+                    playSfx(tapSfx);
+                    StartCoroutine(animateButton(objectHit));
+                    yield return new WaitForSeconds(1.0f);
+                    SceneManager.LoadScene("LevelSelection");
+                    break;
 
-	/// <summary>
-	/// Process player inputs
-	/// </summary>
-	private RaycastHit hitInfo;
-	private Ray ray;
-	IEnumerator tapManager (){
+                case "Button-02":
+                    playSfx(tapSfx);
+                    StartCoroutine(animateButton(objectHit));
+                    yield return new WaitForSeconds(1.0f);
+                    SceneManager.LoadScene("Shop");
+                    break;
 
-		//Mouse of touch?
-		if(	Input.touches.Length > 0 && Input.touches[0].phase == TouchPhase.Ended)  
-			ray = Camera.main.ScreenPointToRay(Input.touches[0].position);
-		else if(Input.GetMouseButtonUp(0))
-			ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-		else
-			yield break;
-			
-		if (Physics.Raycast(ray, out hitInfo)) {
-			GameObject objectHit = hitInfo.transform.gameObject;
-			switch(objectHit.name) {
-			
-				//Game Modes
-				case "Button-01":
-					playSfx(tapSfx);								//play touch sound
-					StartCoroutine(animateButton(objectHit));		//touch animation effect
-					yield return new WaitForSeconds(1.0f);			//Wait for the animation to end
-					SceneManager.LoadScene("LevelSelection");		//Load the next scene
-					break;	
+                case "Button-03":
+                    playSfx(tapSfx);
+                    StartCoroutine(animateButton(objectHit));
+                    yield return new WaitForSeconds(1.0f);
+                    Application.OpenURL("market://details?id=" + gameBundleName);
+                    break;
 
-				case "Button-02":
-					playSfx(tapSfx);
-					StartCoroutine(animateButton(objectHit));
-					yield return new WaitForSeconds(1.0f);
-					SceneManager.LoadScene("Shop");
-					break;
+                case "Button-VideoAds":
+                    playSfx(tapSfx);
+                    StartCoroutine(animateButton(objectHit));
+                    yield return new WaitForSeconds(1.0f);
+                    break;
 
-				case "Button-03":
-					playSfx(tapSfx);
-					StartCoroutine(animateButton(objectHit));
-					yield return new WaitForSeconds(1.0f);
-					Application.OpenURL("market://details?id=" + gameBundleName);
-					break;
-
-				//This button has its own controller
-				case "Button-VideoAds":
-					playSfx(tapSfx);
-					StartCoroutine(animateButton(objectHit));
-					yield return new WaitForSeconds(1.0f);
-					break;
-
-                //This button has its own controller
                 case "Button-Mute":
                     playSfx(tapSfx);
                     StartCoroutine(animateButton(objectHit));
-                    isMuted = true;
-                    AudioListener.pause = true;
-                    objectHit.gameObject.SetActive(false);
-                    _unMuteButton.SetActive(true);
-                    PlayerPrefs.SetInt("IsMuted", isMuted ? 1 : 0);
+                    if (AudioManager.Instance != null)
+                    {
+                        AudioManager.Instance.SetMuteState(true);
+                    }
+                    UpdateMuteButtons();
                     yield return new WaitForSeconds(1.0f);
                     break;
 
                 case "Button-UnMute":
                     playSfx(tapSfx);
                     StartCoroutine(animateButton(objectHit));
-                    isMuted = false;
-                    AudioListener.pause = false;
-                    objectHit.gameObject.SetActive(false);
-                    _muteButton.SetActive(true);
-                    _unMuteButton.SetActive(false);
-                    PlayerPrefs.SetInt("IsMuted", isMuted ? 1 : 0);
+                    if (AudioManager.Instance != null)
+                    {
+                        AudioManager.Instance.SetMuteState(false);
+                    }
+                    UpdateMuteButtons();
                     yield return new WaitForSeconds(1.0f);
                     break;
-            }	
-		}
-	}
+            }
+        }
+    }
 
-    /// <summary>
-    /// This function animates a button by modifying it's scales on x-y plane.
-    // can be used on any element to simulate the tap effect.
-    /// </summary>
-    IEnumerator animateButton ( GameObject _btn  ){
-		
-		canTap = false;
-		Vector3 startingScale = _btn.transform.localScale;		//initial scale	
-		Vector3 destinationScale = startingScale * 0.85f;		//target scale
-		
-		//Scale up
-		float t = 0.0f; 
-		while (t <= 1.0f) {
-			t += Time.deltaTime * buttonAnimationSpeed;
-			_btn.transform.localScale = new Vector3( Mathf.SmoothStep(startingScale.x, destinationScale.x, t),
-			                                      	 Mathf.SmoothStep(startingScale.y, destinationScale.y, t),
-			                                        _btn.transform.localScale.z);
-			yield return 0;
-		}
-		
-		//Scale down
-		float r = 0.0f; 
-		if(_btn.transform.localScale.x >= destinationScale.x) {
-			while (r <= 1.0f) {
-				r += Time.deltaTime * buttonAnimationSpeed;
-				_btn.transform.localScale = new Vector3( Mathf.SmoothStep(destinationScale.x, startingScale.x, r),
-				                                       	 Mathf.SmoothStep(destinationScale.y, startingScale.y, r),
-				                                        _btn.transform.localScale.z);
-				yield return 0;
-			}
-		}
-		
-		if(r >= 1)
-			canTap = true;
-	}
+    IEnumerator animateButton(GameObject _btn)
+    {
+        canTap = false;
+        Vector3 startingScale = _btn.transform.localScale;
+        Vector3 destinationScale = startingScale * 0.85f;
 
+        float t = 0.0f;
+        while (t <= 1.0f)
+        {
+            t += Time.deltaTime * buttonAnimationSpeed;
+            _btn.transform.localScale = new Vector3(Mathf.SmoothStep(startingScale.x, destinationScale.x, t),
+                                                    Mathf.SmoothStep(startingScale.y, destinationScale.y, t),
+                                                    _btn.transform.localScale.z);
+            yield return 0;
+        }
 
+        float r = 0.0f;
+        if (_btn.transform.localScale.x >= destinationScale.x)
+        {
+            while (r <= 1.0f)
+            {
+                r += Time.deltaTime * buttonAnimationSpeed;
+                _btn.transform.localScale = new Vector3(Mathf.SmoothStep(destinationScale.x, startingScale.x, r),
+                                                        Mathf.SmoothStep(destinationScale.y, startingScale.y, r),
+                                                        _btn.transform.localScale.z);
+                yield return 0;
+            }
+        }
 
-	/// <summary>
-	/// Play Audio clips
-	/// </summary>
-	/// <param name="_clip">Clip.</param>
-	void playSfx ( AudioClip _clip  ){
-		GetComponent<AudioSource>().clip = _clip;
-		if(!GetComponent<AudioSource>().isPlaying) {
-			GetComponent<AudioSource>().Play();
-		}
-	}
+        if (r >= 1)
+            canTap = true;
+    }
 
+    void playSfx(AudioClip _clip)
+    {
+        if (audioSource != null)
+        {
+            audioSource.clip = _clip;
+            if (!audioSource.isPlaying)
+            {
+                audioSource.Play();
+            }
+        }
+    }
 }
