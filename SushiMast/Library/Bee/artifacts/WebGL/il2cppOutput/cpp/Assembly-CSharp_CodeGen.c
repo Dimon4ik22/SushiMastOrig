@@ -142,6 +142,8 @@ extern void AudioManager_OnDisable_mF2F0E97A76DC5E6A1C2C6CFBCB94181BAD7DC8E3 (vo
 extern void AudioManager_OnSceneLoaded_mBF1C94EE956DE45F0718F9F7F07579DFA90382A8 (void);
 extern void AudioManager_OnApplicationFocus_mCF6362976976CAAC01AB785062A7CA7E996F63E9 (void);
 extern void AudioManager_OnApplicationPause_mDD60838651872AB9647D5CD3D3DEB16DD7F467F4 (void);
+extern void AudioManager_OnAdStarted_m2324A8F61C2B53F91EC46A6943E6DDA31C8D2402 (void);
+extern void AudioManager_OnAdEnded_m0BEF7BD0680D1905AA437254DA038AFAB2DBDE03 (void);
 extern void AudioManager_Silence_mCFF17182218EE1BBBC2B103303004F39A9E296E7 (void);
 extern void AudioManager__ctor_mA793A9DF6B975D03690B7C953972EFE41AE4D5E6 (void);
 extern void AudioManagerLoader_Start_mF20F72763FD5BFCBC9E51408C7397BEBBD99BB75 (void);
@@ -360,7 +362,7 @@ extern void ShopItemProperties__ctor_m710A7E2293C29B255F9BA15C8CC06A4998416DD2 (
 extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mBEB95BEB954BB63E9710BBC7AD5E78C4CB0A0033 (void);
 extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mE70FB23ACC1EA12ABC948AA22C2E78B2D0AA39B1 (void);
 extern void U3CPrivateImplementationDetailsU3E_ComputeStringHash_m6EA1F233618497AEFF8902A5EDFA24C74E2F2876 (void);
-static Il2CppMethodPointer s_methodPointers[348] = 
+static Il2CppMethodPointer s_methodPointers[350] = 
 {
 	UnityAdsInitializer_Awake_m72049B8820E7E449C7AAC8DF864E16D6AE20FBE3,
 	UnityAdsInitializer__ctor_mB0FB930DC671A2FD54FD71D92CCF545A6F7D0BCD,
@@ -492,6 +494,8 @@ static Il2CppMethodPointer s_methodPointers[348] =
 	AudioManager_OnSceneLoaded_mBF1C94EE956DE45F0718F9F7F07579DFA90382A8,
 	AudioManager_OnApplicationFocus_mCF6362976976CAAC01AB785062A7CA7E996F63E9,
 	AudioManager_OnApplicationPause_mDD60838651872AB9647D5CD3D3DEB16DD7F467F4,
+	AudioManager_OnAdStarted_m2324A8F61C2B53F91EC46A6943E6DDA31C8D2402,
+	AudioManager_OnAdEnded_m0BEF7BD0680D1905AA437254DA038AFAB2DBDE03,
 	AudioManager_Silence_mCFF17182218EE1BBBC2B103303004F39A9E296E7,
 	AudioManager__ctor_mA793A9DF6B975D03690B7C953972EFE41AE4D5E6,
 	AudioManagerLoader_Start_mF20F72763FD5BFCBC9E51408C7397BEBBD99BB75,
@@ -711,7 +715,7 @@ static Il2CppMethodPointer s_methodPointers[348] =
 	UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mE70FB23ACC1EA12ABC948AA22C2E78B2D0AA39B1,
 	U3CPrivateImplementationDetailsU3E_ComputeStringHash_m6EA1F233618497AEFF8902A5EDFA24C74E2F2876,
 };
-static const int32_t s_InvokerIndices[348] = 
+static const int32_t s_InvokerIndices[350] = 
 {
 	4253,
 	4253,
@@ -843,6 +847,8 @@ static const int32_t s_InvokerIndices[348] =
 	1891,
 	3361,
 	3361,
+	4253,
+	4253,
 	3361,
 	4253,
 	4253,
@@ -1066,7 +1072,7 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	348,
+	350,
 	s_methodPointers,
 	0,
 	NULL,

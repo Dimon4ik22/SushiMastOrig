@@ -6,6 +6,7 @@ public class AudioManager : MonoBehaviour
 {
     public static AudioManager Instance { get; private set; }
     private bool isMuted;
+    private bool isAdPlaying; // Flag to track ad state
     private List<AudioSource> audioSources = new List<AudioSource>();
 
     private void Awake()
@@ -90,20 +91,37 @@ public class AudioManager : MonoBehaviour
         }
         SetMuteState(isMuted);
     }
+
     void OnApplicationFocus(bool hasFocus)
     {
+        if (isAdPlaying)
+            return;
+
         Silence(!hasFocus);
     }
 
     void OnApplicationPause(bool isPaused)
     {
+        if (isAdPlaying)
+            return;
+
         Silence(isPaused);
+    }
+
+    public void OnAdStarted()
+    {
+        isAdPlaying = true;
+        Silence(true);
+    }
+
+    public void OnAdEnded()
+    {
+        isAdPlaying = false;
+        Silence(isMuted);
     }
 
     private void Silence(bool silence)
     {
         AudioListener.pause = silence;
-        // Or / And
-        AudioListener.volume = silence ? 0 : 1;
     }
 }

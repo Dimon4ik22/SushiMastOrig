@@ -39,7 +39,6 @@ public class YandexAds : MonoBehaviour
                 case "Button-VideoAds":
                     canTap = false;
                     AddMoneyExtern(100, 45);
-                    MuteAudio();
                     StartCoroutine(reactiveTap());
                     break;
             }
@@ -61,6 +60,9 @@ public class YandexAds : MonoBehaviour
             if (egp)
             {
                 egp.SetActive(false);
+                UnmuteAudio();
+                AudioSource audioSource = GetComponent<AudioSource>();
+                audioSource.Play(); // Начинаем воспроизведение заново
             }
         }
         else
@@ -68,8 +70,6 @@ public class YandexAds : MonoBehaviour
             PlayerPrefs.SetInt("PlayerMoney", PlayerPrefs.GetInt("PlayerMoney") + value1);
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
-
-        UnmuteAudio();
     }
 
     public void MuteAudio()

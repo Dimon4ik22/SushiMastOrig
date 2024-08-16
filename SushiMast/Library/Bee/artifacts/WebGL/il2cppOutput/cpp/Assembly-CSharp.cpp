@@ -1162,6 +1162,7 @@ struct RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5  : public Transfo
 struct AudioManager_t4BE66A4A0E184D85AF74C37BC93BFBEC52953C7B  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
 	bool ___isMuted;
+	bool ___isAdPlaying;
 	List_1_t0EDD1795F87849390F5CA17CBABE75183BE4E235* ___audioSources;
 };
 struct AudioManagerLoader_t1CAE596A33419719D3BC26EE5DEA02EF4EBA8F89  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
@@ -2032,18 +2033,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WaitForSeconds__ctor_m579F95BADEDBAB4B3A
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NotSupportedException__ctor_m1398D0CDE19B36AA3DE9392879738C1EA2439CDF (NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void YandexAds_touchManager_m1ACE9B6FEB7E75251861116887CFFA0D98123E02 (YandexAds_tF6CF6B041C448FB9B06FE02F11F05330AD5C293E* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void YandexAds_AddMoneyExtern_m7AAE51FBE148482814E1241B6334C04473E6BB11 (int32_t ___0_value1, int32_t ___1_value2, const RuntimeMethod* method) ;
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void YandexAds_MuteAudio_m3EFCAE81E9584C93B11A5E4A828B39242B3A886B (YandexAds_tF6CF6B041C448FB9B06FE02F11F05330AD5C293E* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* YandexAds_reactiveTap_m0899F9F68E8EDB971FA2ED4AE078DCAA02425E59 (YandexAds_tF6CF6B041C448FB9B06FE02F11F05330AD5C293E* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* String_Split_m9530B73D02054692283BF35C3A27C8F2230946F4 (String_t* __this, Il2CppChar ___0_separator, int32_t ___1_options, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Int32_Parse_m273CA1A9C7717C99641291A95C543711C0202AF0 (String_t* ___0_s, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Object_op_Implicit_m93896EF7D68FA113C42D3FE2BC6F661FC7EF514A (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___0_exists, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92 (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* __this, bool ___0_value, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void YandexAds_UnmuteAudio_m180695AF3D12C1167B63E79F2E45F98E802F8ED6 (YandexAds_tF6CF6B041C448FB9B06FE02F11F05330AD5C293E* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PlayerPrefs_GetInt_m4D859DBEABAD3FB406C94485A0B2638A0C7F2987 (String_t* ___0_key, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayerPrefs_SetInt_m956D3E2DB966F20CF42F842880DDF9E2BE94D948 (String_t* ___0_key, int32_t ___1_value, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Scene_tA1DC762B79745EB5140F054C884855B922318356 SceneManager_GetActiveScene_m0B320EC4302F51A71495D1CCD1A0FF9C2ED1FDC8 (const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Scene_get_name_m3C818DFA663E159274DAD823B780C7616C5E2A8C (Scene_tA1DC762B79745EB5140F054C884855B922318356* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SceneManager_LoadScene_mBB3DBC1601A21F8F4E8A5D68FED30EA9412F218E (String_t* ___0_sceneName, const RuntimeMethod* method) ;
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void YandexAds_UnmuteAudio_m180695AF3D12C1167B63E79F2E45F98E802F8ED6 (YandexAds_tF6CF6B041C448FB9B06FE02F11F05330AD5C293E* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AudioListener_set_volume_m72BAF2D558A5449091A59630EBF48095DEB4C721 (float ___0_value, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CreactiveTapU3Ed__10__ctor_m0E1F8FD6A8F45005FC21C03C3201AF82F1DA7A36 (U3CreactiveTapU3Ed__10_t386BA026CC34C02984477F73A21C2A5B0370D704* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) ;
 inline void UnityAction_1__ctor_m4AAE7BBE595D82E15A5A774EEB588EA82A63C16E (UnityAction_1_tD54AA8F82EC6FBE26C68406BD3CB52F8CC4BF187* __this, RuntimeObject* ___0_object, intptr_t ___1_method, const RuntimeMethod* method)
@@ -2865,7 +2865,7 @@ IL_0062:
 		L_14 = Physics_Raycast_mCAC9F02A1AAB49E16B384EBC8318E2DF30F4B0E5(L_12, L_13, NULL);
 		if (!L_14)
 		{
-			goto IL_00b9;
+			goto IL_00b3;
 		}
 	}
 	{
@@ -2880,20 +2880,19 @@ IL_0062:
 		L_19 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_18, _stringLiteralADC5BB16546D6EA0A88D85129454428B58207EF8, NULL);
 		if (!L_19)
 		{
-			goto IL_00b9;
+			goto IL_00b3;
 		}
 	}
 	{
 		__this->___canTap = (bool)0;
 		YandexAds_AddMoneyExtern_m7AAE51FBE148482814E1241B6334C04473E6BB11(((int32_t)100), ((int32_t)45), NULL);
-		YandexAds_MuteAudio_m3EFCAE81E9584C93B11A5E4A828B39242B3A886B(__this, NULL);
 		RuntimeObject* L_20;
 		L_20 = YandexAds_reactiveTap_m0899F9F68E8EDB971FA2ED4AE078DCAA02425E59(__this, NULL);
 		Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* L_21;
 		L_21 = MonoBehaviour_StartCoroutine_m4CAFF732AA28CD3BDC5363B44A863575530EC812(__this, L_20, NULL);
 	}
 
-IL_00b9:
+IL_00b3:
 	{
 		return;
 	}
@@ -2933,7 +2932,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void YandexAds_AddMoneyOrTime_m2DDFCE157A0839
 		bool L_9 = __this->___isSaveMe;
 		if (!L_9)
 		{
-			goto IL_0050;
+			goto IL_0055;
 		}
 	}
 	{
@@ -2951,16 +2950,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void YandexAds_AddMoneyOrTime_m2DDFCE157A0839
 		L_14 = Object_op_Implicit_m93896EF7D68FA113C42D3FE2BC6F661FC7EF514A(L_13, NULL);
 		if (!L_14)
 		{
-			goto IL_0078;
+			goto IL_007d;
 		}
 	}
 	{
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_15 = V_2;
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_15, (bool)0, NULL);
-		goto IL_0078;
+		YandexAds_UnmuteAudio_m180695AF3D12C1167B63E79F2E45F98E802F8ED6(__this, NULL);
+		return;
 	}
 
-IL_0050:
+IL_0055:
 	{
 		int32_t L_16;
 		L_16 = PlayerPrefs_GetInt_m4D859DBEABAD3FB406C94485A0B2638A0C7F2987(_stringLiteral8BDE029BD9881368C022427789F2354CDC78AB16, NULL);
@@ -2975,9 +2975,8 @@ IL_0050:
 		SceneManager_LoadScene_mBB3DBC1601A21F8F4E8A5D68FED30EA9412F218E(L_19, NULL);
 	}
 
-IL_0078:
+IL_007d:
 	{
-		YandexAds_UnmuteAudio_m180695AF3D12C1167B63E79F2E45F98E802F8ED6(__this, NULL);
 		return;
 	}
 }
@@ -6820,44 +6819,65 @@ IL_0024:
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AudioManager_OnApplicationFocus_mCF6362976976CAAC01AB785062A7CA7E996F63E9 (AudioManager_t4BE66A4A0E184D85AF74C37BC93BFBEC52953C7B* __this, bool ___0_hasFocus, const RuntimeMethod* method) 
 {
 	{
-		bool L_0 = ___0_hasFocus;
-		AudioManager_Silence_mCFF17182218EE1BBBC2B103303004F39A9E296E7(__this, (bool)((((int32_t)L_0) == ((int32_t)0))? 1 : 0), NULL);
+		bool L_0 = __this->___isAdPlaying;
+		if (!L_0)
+		{
+			goto IL_0009;
+		}
+	}
+	{
+		return;
+	}
+
+IL_0009:
+	{
+		bool L_1 = ___0_hasFocus;
+		AudioManager_Silence_mCFF17182218EE1BBBC2B103303004F39A9E296E7(__this, (bool)((((int32_t)L_1) == ((int32_t)0))? 1 : 0), NULL);
 		return;
 	}
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AudioManager_OnApplicationPause_mDD60838651872AB9647D5CD3D3DEB16DD7F467F4 (AudioManager_t4BE66A4A0E184D85AF74C37BC93BFBEC52953C7B* __this, bool ___0_isPaused, const RuntimeMethod* method) 
 {
 	{
-		bool L_0 = ___0_isPaused;
+		bool L_0 = __this->___isAdPlaying;
+		if (!L_0)
+		{
+			goto IL_0009;
+		}
+	}
+	{
+		return;
+	}
+
+IL_0009:
+	{
+		bool L_1 = ___0_isPaused;
+		AudioManager_Silence_mCFF17182218EE1BBBC2B103303004F39A9E296E7(__this, L_1, NULL);
+		return;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AudioManager_OnAdStarted_m2324A8F61C2B53F91EC46A6943E6DDA31C8D2402 (AudioManager_t4BE66A4A0E184D85AF74C37BC93BFBEC52953C7B* __this, const RuntimeMethod* method) 
+{
+	{
+		__this->___isAdPlaying = (bool)1;
+		AudioManager_Silence_mCFF17182218EE1BBBC2B103303004F39A9E296E7(__this, (bool)1, NULL);
+		return;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AudioManager_OnAdEnded_m0BEF7BD0680D1905AA437254DA038AFAB2DBDE03 (AudioManager_t4BE66A4A0E184D85AF74C37BC93BFBEC52953C7B* __this, const RuntimeMethod* method) 
+{
+	{
+		__this->___isAdPlaying = (bool)0;
+		bool L_0 = __this->___isMuted;
 		AudioManager_Silence_mCFF17182218EE1BBBC2B103303004F39A9E296E7(__this, L_0, NULL);
 		return;
 	}
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AudioManager_Silence_mCFF17182218EE1BBBC2B103303004F39A9E296E7 (AudioManager_t4BE66A4A0E184D85AF74C37BC93BFBEC52953C7B* __this, bool ___0_silence, const RuntimeMethod* method) 
 {
-	int32_t G_B3_0 = 0;
 	{
 		bool L_0 = ___0_silence;
 		AudioListener_set_pause_m4D52C9FFC6B10B0F281329FA0FB3CE2C64894F33(L_0, NULL);
-		bool L_1 = ___0_silence;
-		if (L_1)
-		{
-			goto IL_000c;
-		}
-	}
-	{
-		G_B3_0 = 1;
-		goto IL_000d;
-	}
-
-IL_000c:
-	{
-		G_B3_0 = 0;
-	}
-
-IL_000d:
-	{
-		AudioListener_set_volume_m72BAF2D558A5449091A59630EBF48095DEB4C721(((float)G_B3_0), NULL);
 		return;
 	}
 }

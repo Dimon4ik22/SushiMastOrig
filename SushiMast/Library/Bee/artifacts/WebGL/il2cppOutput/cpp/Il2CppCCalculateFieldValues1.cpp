@@ -5294,6 +5294,7 @@ struct TMP_SpriteAsset_t81F779E6F705CE190DC0D1F93A954CB8B1774B39  : public TMP_A
 struct AudioManager_t4BE66A4A0E184D85AF74C37BC93BFBEC52953C7B  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
 	bool ___isMuted;
+	bool ___isAdPlaying;
 	List_1_t0EDD1795F87849390F5CA17CBABE75183BE4E235* ___audioSources;
 };
 struct ButtonCompl_tA7BCEC57ACAE5B4E158BA97D91A36B329AC4A469  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
@@ -8148,9 +8149,9 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3502[3] =
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3503[3] = 
 {
 	static_cast<int32_t>(offsetof(CustomerSpawner_tE5A1BA10E8AD61F03F3BB436CD912F9D0F1FD0EB, ___customerGo)),static_cast<int32_t>(offsetof(CustomerSpawner_tE5A1BA10E8AD61F03F3BB436CD912F9D0F1FD0EB, ___canSpawnNewCustomer)),static_cast<int32_t>(offsetof(CustomerSpawner_tE5A1BA10E8AD61F03F3BB436CD912F9D0F1FD0EB, ___spawnDir)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3504[3] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3504[4] = 
 {
-	static_cast<int32_t>(offsetof(AudioManager_t4BE66A4A0E184D85AF74C37BC93BFBEC52953C7B_StaticFields, ___U3CInstanceU3Ek__BackingField)),static_cast<int32_t>(offsetof(AudioManager_t4BE66A4A0E184D85AF74C37BC93BFBEC52953C7B, ___isMuted)),static_cast<int32_t>(offsetof(AudioManager_t4BE66A4A0E184D85AF74C37BC93BFBEC52953C7B, ___audioSources)),};
+	static_cast<int32_t>(offsetof(AudioManager_t4BE66A4A0E184D85AF74C37BC93BFBEC52953C7B_StaticFields, ___U3CInstanceU3Ek__BackingField)),static_cast<int32_t>(offsetof(AudioManager_t4BE66A4A0E184D85AF74C37BC93BFBEC52953C7B, ___isMuted)),static_cast<int32_t>(offsetof(AudioManager_t4BE66A4A0E184D85AF74C37BC93BFBEC52953C7B, ___isAdPlaying)),static_cast<int32_t>(offsetof(AudioManager_t4BE66A4A0E184D85AF74C37BC93BFBEC52953C7B, ___audioSources)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3506[3] = 
 {
 	static_cast<int32_t>(offsetof(U3CreactivateU3Ed__18_t4B15E350DE1DBFF2DBB8BB5AC3B7343A149C1E7D, ___U3CU3E1__state)),static_cast<int32_t>(offsetof(U3CreactivateU3Ed__18_t4B15E350DE1DBFF2DBB8BB5AC3B7343A149C1E7D, ___U3CU3E2__current)),static_cast<int32_t>(offsetof(U3CreactivateU3Ed__18_t4B15E350DE1DBFF2DBB8BB5AC3B7343A149C1E7D, ___U3CU3E4__this)),};

@@ -340,6 +340,7 @@
 "Assets/HappyBurgerShop/Scripts/Ads/UnityAdsInitializer.cs"
 "Assets/HappyBurgerShop/Scripts/Ads/UnityAdsRewardedButton.cs"
 "Assets/HappyBurgerShop/Scripts/Ads/YandexAds.cs"
+"Assets/HappyBurgerShop/Scripts/Aspect.cs"
 "Assets/HappyBurgerShop/Scripts/ButtonCompl.cs"
 "Assets/HappyBurgerShop/Scripts/Career/CareerLevelSetup.cs"
 "Assets/HappyBurgerShop/Scripts/Career/CareerMapManager.cs"
