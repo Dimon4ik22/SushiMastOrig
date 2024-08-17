@@ -3,6 +3,7 @@ ScriptsOnlyBuild:
     Assembly-CSharp.dll:
     - AudioManager
     - ButtonCompl
+    - CameraFixedAspectRatio
     - CareerLevelSetup
     - CareerMapManager
     - CustomerController
@@ -126,43 +127,45 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 17052}
     - Class: 114
-      Script: {instanceID: 17364}
+      Script: {instanceID: 17496}
     - Class: 114
-      Script: {instanceID: 17498}
+      Script: {instanceID: 17620}
     - Class: 114
-      Script: {instanceID: 17622}
+      Script: {instanceID: 17822}
     - Class: 114
-      Script: {instanceID: 17824}
+      Script: {instanceID: 17992}
     - Class: 114
-      Script: {instanceID: 17994}
+      Script: {instanceID: 18294}
     - Class: 114
-      Script: {instanceID: 18298}
+      Script: {instanceID: 18956}
     - Class: 114
-      Script: {instanceID: 18960}
+      Script: {instanceID: 18976}
     - Class: 114
-      Script: {instanceID: 18980}
+      Script: {instanceID: 19960}
     - Class: 114
-      Script: {instanceID: 19964}
+      Script: {instanceID: 20284}
     - Class: 114
-      Script: {instanceID: 20288}
+      Script: {instanceID: 20464}
     - Class: 114
-      Script: {instanceID: 20468}
+      Script: {instanceID: 20580}
     - Class: 114
-      Script: {instanceID: 20584}
+      Script: {instanceID: 20792}
     - Class: 114
-      Script: {instanceID: 20796}
+      Script: {instanceID: 20962}
     - Class: 114
-      Script: {instanceID: 20966}
+      Script: {instanceID: 21048}
     - Class: 114
-      Script: {instanceID: 21052}
+      Script: {instanceID: 21416}
     - Class: 114
-      Script: {instanceID: 21420}
+      Script: {instanceID: 21584}
     - Class: 114
-      Script: {instanceID: 21588}
+      Script: {instanceID: 21664}
     - Class: 114
-      Script: {instanceID: 21668}
+      Script: {instanceID: 21760}
     - Class: 114
-      Script: {instanceID: 21764}
+      Script: {instanceID: 22834}
+    - Class: 114
+      Script: {instanceID: 22838}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 124
@@ -205,13 +208,13 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 17204}
     - Class: 114
-      Script: {instanceID: 19098}
+      Script: {instanceID: 19094}
     - Class: 114
-      Script: {instanceID: 19248}
+      Script: {instanceID: 19244}
     - Class: 114
-      Script: {instanceID: 19348}
+      Script: {instanceID: 19344}
     - Class: 114
-      Script: {instanceID: 20036}
+      Script: {instanceID: 20032}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 124
@@ -258,13 +261,15 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 17364}
+      Script: {instanceID: 18294}
     - Class: 114
-      Script: {instanceID: 18298}
+      Script: {instanceID: 20026}
     - Class: 114
-      Script: {instanceID: 20030}
+      Script: {instanceID: 20224}
     - Class: 114
-      Script: {instanceID: 20228}
+      Script: {instanceID: 22834}
+    - Class: 114
+      Script: {instanceID: 22838}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 124
@@ -311,17 +316,23 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 16954}
     - Class: 114
-      Script: {instanceID: 17364}
+      Script: {instanceID: 17620}
     - Class: 114
-      Script: {instanceID: 18298}
+      Script: {instanceID: 18294}
     - Class: 114
-      Script: {instanceID: 18788}
+      Script: {instanceID: 18784}
     - Class: 114
-      Script: {instanceID: 18960}
+      Script: {instanceID: 18956}
     - Class: 114
-      Script: {instanceID: 21114}
+      Script: {instanceID: 21048}
     - Class: 114
-      Script: {instanceID: 21738}
+      Script: {instanceID: 21110}
+    - Class: 114
+      Script: {instanceID: 21734}
+    - Class: 114
+      Script: {instanceID: 22834}
+    - Class: 114
+      Script: {instanceID: 22838}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 124
@@ -366,11 +377,13 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 17364}
+      Script: {instanceID: 18494}
     - Class: 114
-      Script: {instanceID: 18498}
+      Script: {instanceID: 21248}
     - Class: 114
-      Script: {instanceID: 21252}
+      Script: {instanceID: 22834}
+    - Class: 114
+      Script: {instanceID: 22838}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 124
@@ -500,12 +513,6 @@ ScriptsOnlyBuild:
     className: RawImage
   - hash:
       serializedVersion: 2
-      Hash: 751e5bae2a317288c2ab58d66687092b
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: AudioManager
-  - hash:
-      serializedVersion: 2
       Hash: f427e60210e74e8d8ecdffcbb857baf9
     assemblyName: Assembly-CSharp
     namespaceName: 
@@ -630,12 +637,6 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.UI
     className: ToggleGroup
-  - hash:
-      serializedVersion: 2
-      Hash: 751e5bae2a317288c2ab58d66687092b
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: AudioManagerLoader
   - hash:
       serializedVersion: 2
       Hash: 751e5bae2a317288c2ab58d66687092b
@@ -1368,6 +1369,24 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: 751e5bae2a317288c2ab58d66687092b
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: AudioManagerLoader
+  - hash:
+      serializedVersion: 2
+      Hash: 751e5bae2a317288c2ab58d66687092b
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: AudioManager
+  - hash:
+      serializedVersion: 2
+      Hash: 2c4f27cd9501ca8c80b08f286e3d7126
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: CameraFixedAspectRatio
   platform: 20
   scenePathNames:
   - Assets/HappyBurgerShop/Scenes/Init.unity
@@ -1375,4 +1394,4 @@ ScriptsOnlyBuild:
   - Assets/HappyBurgerShop/Scenes/LevelSelection.unity
   - Assets/HappyBurgerShop/Scenes/Game.unity
   - Assets/HappyBurgerShop/Scenes/Shop.unity
-  playerPath: C:/New Programs/Unity Builds
+  playerPath: C:/Unity Projects/Build

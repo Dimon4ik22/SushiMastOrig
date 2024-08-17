@@ -39,6 +39,10 @@ extern void U3CreactiveTapU3Ed__10_MoveNext_m886CF17B54678ECF7D280F2E448259940F7
 extern void U3CreactiveTapU3Ed__10_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m2EF5D9B142D5CBEBAB713AABFEF65CA9E37AEB17 (void);
 extern void U3CreactiveTapU3Ed__10_System_Collections_IEnumerator_Reset_m53D3C80EC701F73C61EC9F4C09F1DB66A0F84F2A (void);
 extern void U3CreactiveTapU3Ed__10_System_Collections_IEnumerator_get_Current_mEAE94884FB8C695F9D4D53D01CA1B9DCFC637F90 (void);
+extern void CameraFixedAspectRatio_Start_m1015644C165CA7587DDE4089951468DD71462797 (void);
+extern void CameraFixedAspectRatio_Update_m57DE373D3F4EF3F1AE7FC99637C28AE65707F8F4 (void);
+extern void CameraFixedAspectRatio_UpdateCameraViewport_m5E2419F871BFE9FE24E222B237D7775DE4549BC5 (void);
+extern void CameraFixedAspectRatio__ctor_m2ABCF756B76FED7ED4D4350D8A9B49CE55E88B01 (void);
 extern void ButtonCompl_OnEnable_mC6B056D9331EDADA30A23D0DB2508B08A7A70DD7 (void);
 extern void ButtonCompl_OnDisable_mACE0CCE6E9AB04748CAD24A0FEE13D5F13AD4423 (void);
 extern void ButtonCompl_HandleCustomerSpawned_mC4A2D809CA9047532AAF87087A5EF8A7D1B38688 (void);
@@ -362,7 +366,7 @@ extern void ShopItemProperties__ctor_m710A7E2293C29B255F9BA15C8CC06A4998416DD2 (
 extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mBEB95BEB954BB63E9710BBC7AD5E78C4CB0A0033 (void);
 extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mE70FB23ACC1EA12ABC948AA22C2E78B2D0AA39B1 (void);
 extern void U3CPrivateImplementationDetailsU3E_ComputeStringHash_m6EA1F233618497AEFF8902A5EDFA24C74E2F2876 (void);
-static Il2CppMethodPointer s_methodPointers[350] = 
+static Il2CppMethodPointer s_methodPointers[354] = 
 {
 	UnityAdsInitializer_Awake_m72049B8820E7E449C7AAC8DF864E16D6AE20FBE3,
 	UnityAdsInitializer__ctor_mB0FB930DC671A2FD54FD71D92CCF545A6F7D0BCD,
@@ -391,6 +395,10 @@ static Il2CppMethodPointer s_methodPointers[350] =
 	U3CreactiveTapU3Ed__10_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m2EF5D9B142D5CBEBAB713AABFEF65CA9E37AEB17,
 	U3CreactiveTapU3Ed__10_System_Collections_IEnumerator_Reset_m53D3C80EC701F73C61EC9F4C09F1DB66A0F84F2A,
 	U3CreactiveTapU3Ed__10_System_Collections_IEnumerator_get_Current_mEAE94884FB8C695F9D4D53D01CA1B9DCFC637F90,
+	CameraFixedAspectRatio_Start_m1015644C165CA7587DDE4089951468DD71462797,
+	CameraFixedAspectRatio_Update_m57DE373D3F4EF3F1AE7FC99637C28AE65707F8F4,
+	CameraFixedAspectRatio_UpdateCameraViewport_m5E2419F871BFE9FE24E222B237D7775DE4549BC5,
+	CameraFixedAspectRatio__ctor_m2ABCF756B76FED7ED4D4350D8A9B49CE55E88B01,
 	ButtonCompl_OnEnable_mC6B056D9331EDADA30A23D0DB2508B08A7A70DD7,
 	ButtonCompl_OnDisable_mACE0CCE6E9AB04748CAD24A0FEE13D5F13AD4423,
 	ButtonCompl_HandleCustomerSpawned_mC4A2D809CA9047532AAF87087A5EF8A7D1B38688,
@@ -715,7 +723,7 @@ static Il2CppMethodPointer s_methodPointers[350] =
 	UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mE70FB23ACC1EA12ABC948AA22C2E78B2D0AA39B1,
 	U3CPrivateImplementationDetailsU3E_ComputeStringHash_m6EA1F233618497AEFF8902A5EDFA24C74E2F2876,
 };
-static const int32_t s_InvokerIndices[350] = 
+static const int32_t s_InvokerIndices[354] = 
 {
 	4253,
 	4253,
@@ -744,6 +752,10 @@ static const int32_t s_InvokerIndices[350] =
 	4163,
 	4253,
 	4163,
+	4253,
+	4253,
+	4253,
+	4253,
 	4253,
 	4253,
 	3434,
@@ -1072,7 +1084,7 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	350,
+	354,
 	s_methodPointers,
 	0,
 	NULL,

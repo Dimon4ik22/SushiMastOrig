@@ -1,12 +1,57 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class Aspect : MonoBehaviour
+[RequireComponent(typeof(Camera))]
+public class CameraFixedAspectRatio : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public Vector2 TargetResolution = new Vector2(720, 1280); // Целевое разрешение (ширина x высота)
+
+    private Camera componentCamera;
+
     void Start()
     {
-        Camera.main.aspect = 16.0f / 9.0f; // Пример для соотношения 16:9
+        componentCamera = GetComponent<Camera>();
+        UpdateCameraViewport();
+    }
+
+    void Update()
+    {
+        UpdateCameraViewport();
+    }
+
+    void UpdateCameraViewport()
+    {
+        // Соотношение сторон целевого разрешения
+        float targetAspect = TargetResolution.x / TargetResolution.y;
+
+        // Текущее соотношение сторон экрана
+        float windowAspect = (float)Screen.width / (float)Screen.height;
+
+        // Сравниваем текущее соотношение с целевым
+        float scaleHeight = windowAspect / targetAspect;
+
+        if (scaleHeight < 1.0f) // Экран шире, чем целевое соотношение
+        {
+            Rect rect = componentCamera.rect;
+
+            rect.width = 1.0f;
+            rect.height = scaleHeight;
+            rect.x = 0;
+            rect.y = (1.0f - scaleHeight) / 2.0f;
+
+            componentCamera.rect = rect;
+        }
+        else // Экран выше, чем целевое соотношение
+        {
+            float scaleWidth = 1.0f / scaleHeight;
+
+            Rect rect = componentCamera.rect;
+
+            rect.width = scaleWidth;
+            rect.height = 1.0f;
+            rect.x = (1.0f - scaleWidth) / 2.0f;
+            rect.y = 0;
+
+            componentCamera.rect = rect;
+        }
     }
 }

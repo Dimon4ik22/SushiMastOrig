@@ -59,6 +59,7 @@ public class YandexAds : MonoBehaviour
             GameObject egp = GameObject.FindGameObjectWithTag("EndGamePlane");
             if (egp)
             {
+                Debug.Log("1");
                 egp.SetActive(false);
                 UnmuteAudio();
                 AudioSource audioSource = GetComponent<AudioSource>();
